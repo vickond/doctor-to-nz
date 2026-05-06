@@ -1,0 +1,3191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor to New Zealand — Complete Guide with Cost Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ===== GUIDE VARIABLES ===== */
+:root {
+  --ink: #1a1a2e;
+  --paper: #f4f1eb;
+  --cream: #faf8f3;
+  --teal: #0f6674;
+  --teal-light: #e0f2f5;
+  --teal-mid: #7ec8d3;
+  --gold: #c9a84c;
+  --gold-light: #fdf3d8;
+  --border: #d4cfc5;
+  --shadow: 0 2px 20px rgba(15,102,116,0.08);
+  --shadow-strong: 0 8px 40px rgba(15,102,116,0.14);
+  --red: #c0392b; --red-light: #fdecea;
+  --green: #1a7a4a; --green-light: #e6f4ec;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Force light mode - prevent iOS dark mode from inverting */
+:root {
+  color-scheme: light only;
+}
+html {
+  background: #f4f1eb !important;
+}
+
+/* ===== LAYOUT ===== */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===== SIDEBAR NAV ===== */
+.sidenav {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: 220px;
+  background: var(--ink);
+  overflow-y: auto;
+  z-index: 100;
+  padding: 0 0 40px;
+}
+.sidenav-logo {
+  padding: 24px 20px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 8px;
+}
+.sidenav-logo .flag { font-size: 22px; margin-bottom: 4px; }
+.sidenav-logo .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; color: white; line-height: 1.2;
+}
+.sidenav-logo .sub { font-size: 10px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+
+.nav-section {
+  padding: 12px 16px 4px;
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--teal-mid);
+}
+.nav-item {
+  display: block; padding: 7px 20px;
+  font-size: 12px; color: rgba(255,255,255,0.6);
+  text-decoration: none; cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+  line-height: 1.3;
+}
+.nav-item:hover { color: white; background: rgba(255,255,255,0.05); }
+.nav-item.active { color: var(--teal-mid); border-left-color: var(--teal-mid); background: rgba(15,102,116,0.1); }
+
+/* ===== MAIN CONTENT ===== */
+.main { margin-left: 220px; min-height: 100vh; }
+
+/* ===== HERO ===== */
+.hero {
+  background: var(--ink);
+  color: white;
+  padding: 80px 60px 64px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  right: -100px; top: -100px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(15,102,116,0.35) 0%, transparent 65%);
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  left: -60px; bottom: -60px;
+  width: 250px; height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+}
+.hero-badge {
+  display: inline-block;
+  background: var(--teal);
+  color: white; font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 2px; margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px; line-height: 1.1; font-weight: 700;
+  max-width: 700px; margin-bottom: 16px;
+}
+.hero h1 em { color: var(--teal-mid); font-style: normal; }
+.hero .sub {
+  font-size: 17px; color: rgba(255,255,255,0.6);
+  max-width: 560px; margin-bottom: 32px; line-height: 1.6;
+}
+.hero-meta {
+  display: flex; gap: 32px; flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+}
+.hero-meta-item { font-size: 12px; }
+.hero-meta-item .val { color: var(--teal-mid); font-weight: 700; font-size: 14px; display: block; }
+.hero-meta-item .lbl { color: rgba(255,255,255,0.4); }
+
+/* ===== CONTENT SECTIONS ===== */
+.section { padding: 60px 60px; border-bottom: 1px solid var(--border); background: #faf8f3 !important; }
+.section:last-child { border-bottom: none; }
+.section-header {
+  margin-bottom: 36px;
+}
+.chapter-num {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--teal);
+  margin-bottom: 8px;
+}
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px; font-weight: 700; line-height: 1.2;
+  color: var(--ink); margin-bottom: 8px;
+}
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700;
+  color: var(--ink); margin: 36px 0 14px;
+}
+.section p { margin-bottom: 16px; color: #333333 !important; max-width: 780px; }
+
+/* ===== LINK BOXES ===== */
+.link-box {
+  background: var(--teal-light);
+  border: 1.5px solid var(--teal-mid);
+  border-left: 4px solid var(--teal);
+  border-radius: 8px; padding: 16px 20px;
+  margin: 20px 0;
+}
+.link-box .lb-title { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
+.link-box a { display: block; color: var(--teal); font-size: 13px; padding: 3px 0; text-decoration: none; }
+.link-box a:hover { text-decoration: underline; }
+.link-box a::before { content: "→ "; }
+
+/* ===== INFO TABLE ===== */
+.info-table { width: 100%; border-collapse: collapse; margin: 20px 0; max-width: 800px; font-size: 14px; }
+.info-table td { padding: 10px 14px; border: 1px solid var(--border); vertical-align: top; color: #1a1a2e !important; background: #ffffff; }
+.info-table td:first-child { background: var(--teal-light); font-weight: 600; white-space: nowrap; width: 200px; color: var(--teal); }
+.info-table tr:hover td { background-color: #f0f8fb; }
+.info-table tr:hover td:first-child { background-color: #c5e8ef; }
+
+/* ===== CALLOUTS ===== */
+.callout {
+  border-radius: 8px; padding: 16px 20px; margin: 20px 0; max-width: 800px;
+}
+.callout.warning { background: #FFF8E1; border-left: 4px solid #F9A825; }
+.callout.tip { background: var(--teal-light); border-left: 4px solid var(--teal); }
+.callout.danger { background: #FFF0F0; border-left: 4px solid var(--red); }
+.callout-title { font-weight: 700; font-size: 13px; margin-bottom: 6px; }
+.callout.warning .callout-title { color: #7B5800; }
+.callout.tip .callout-title { color: var(--teal); }
+.callout.danger .callout-title { color: var(--red); }
+.callout p { font-size: 13px; margin: 0; color: #444444 !important; max-width: none; }
+
+/* ===== PROMPT BOX ===== */
+.prompt-box {
+  background: #f0faf2; border: 1.5px solid #a8d5b5;
+  border-left: 4px solid var(--green); border-radius: 8px;
+  padding: 16px 20px; margin: 20px 0; max-width: 800px;
+}
+.prompt-box .pt { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+.prompt-box code { font-family: 'DM Mono', monospace; font-size: 12px; color: #2d5a3d; line-height: 1.6; display: block; white-space: pre-wrap; }
+
+/* ===== BULLET LISTS ===== */
+.guide-list { margin: 12px 0 20px 20px; max-width: 780px; }
+.guide-list li { margin-bottom: 8px; font-size: 14px; color: #333333 !important; }
+.guide-list li strong { color: var(--ink); }
+
+/* ===== NUMBERED STEPS ===== */
+.steps { margin: 20px 0; max-width: 780px; }
+.step {
+  display: flex; gap: 16px; margin-bottom: 16px;
+  background: #ffffff !important; border: 1px solid #d4cfc5; border-radius: 8px; padding: 14px 16px;
+}
+.step-num {
+  min-width: 32px; height: 32px;
+  background: var(--teal); color: white;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 14px; flex-shrink: 0;
+}
+.step-content .step-title { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.step-content p { font-size: 13px; margin: 0; color: #555555 !important; max-width: none; }
+
+/* ===== SALARY TABLE ===== */
+.salary-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin: 20px 0; max-width: 800px;
+}
+.salary-card {
+  background: white; border: 1.5px solid var(--border); border-radius: 10px;
+  padding: 18px; text-align: center;
+}
+.salary-card .sc-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.salary-card .sc-amount { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--teal); }
+.salary-card .sc-sub { font-size: 11px; color: #999; margin-top: 4px; }
+
+/* ===== QUICK REF ===== */
+.quick-ref-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 20px 0;
+}
+.qr-card {
+  background: #ffffff !important; border: 1.5px solid #d4cfc5; border-radius: 10px; padding: 18px;
+}
+.qr-card .qrc-title { font-size: 12px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.qr-card a { display: block; font-size: 12px; color: #0f6674 !important; text-decoration: none; padding: 2px 0; }
+.qr-card a:hover { text-decoration: underline; }
+.qr-card a::before { content: "→ "; }
+
+/* ===== CALCULATOR SECTION ===== */
+.calc-section {
+  background: #f0f7f9;
+  border-top: 3px solid var(--teal);
+  padding: 0;
+}
+.calc-intro {
+  padding: 48px 60px 32px;
+  background: var(--ink); color: white;
+}
+.calc-intro h2 {
+  font-family: 'Playfair Display', serif; font-size: 36px; color: white; margin-bottom: 8px;
+}
+.calc-intro p { color: rgba(255,255,255,0.6); max-width: 600px; }
+
+/* EMBED CALCULATOR STYLES */
+
+  :root {
+    --ink: #1a1a2e;
+    --paper: #f4f1eb;
+    --cream: #faf8f3;
+    --teal: #0f6674;
+    --teal-light: #e0f2f5;
+    --teal-mid: #7ec8d3;
+    --gold: #c9a84c;
+    --gold-light: #fdf3d8;
+    --red: #c0392b;
+    --red-light: #fdecea;
+    --green: #1a7a4a;
+    --green-light: #e6f4ec;
+    --border: #d4cfc5;
+    --shadow: 0 2px 20px rgba(15,102,116,0.08);
+    --shadow-strong: 0 8px 40px rgba(15,102,116,0.14);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    font-size: 14px;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--ink);
+    color: white;
+    padding: 40px 32px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    right: -80px; top: -80px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(15,102,116,0.4) 0%, transparent 70%);
+  }
+  .header-badge {
+    display: inline-block;
+    background: var(--teal);
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+  .header h1 span { color: var(--teal-mid); }
+  .header p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    max-width: 500px;
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 380px; gap: 28px; align-items: start; }
+
+  /* PANELS */
+  .panel {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  .panel-header {
+    background: var(--ink);
+    color: white;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .panel-header:hover { background: #252540; }
+  .panel-icon { font-size: 18px; }
+  .panel-title { font-weight: 600; font-size: 14px; flex: 1; }
+  .panel-toggle { font-size: 12px; color: var(--teal-mid); transition: transform 0.2s; }
+  .panel-toggle.open { transform: rotate(180deg); }
+  .panel-body { padding: 20px; display: none; }
+  .panel-body.open { display: block; }
+
+  /* FORM ELEMENTS */
+  .field { margin-bottom: 14px; }
+  .field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 5px;
+  }
+  .field input, .field select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    background: white;
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+  .field input:focus, .field select:focus {
+    outline: none;
+    border-color: var(--teal);
+  }
+  .field-hint { font-size: 11px; color: #888; margin-top: 3px; }
+
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .field-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+
+  /* RANGE SLIDER */
+  .slider-wrap { display: flex; align-items: center; gap: 10px; }
+  .slider-wrap input[type=range] {
+    flex: 1; height: 4px; border: none; background: var(--border);
+    padding: 0; border-radius: 2px; cursor: pointer;
+    accent-color: var(--teal);
+  }
+  .slider-val {
+    min-width: 60px; text-align: right;
+    font-weight: 600; color: var(--teal); font-size: 13px;
+  }
+
+  /* TOGGLE SWITCH */
+  .toggle-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 0; border-bottom: 1px solid var(--border);
+  }
+  .toggle-row:last-child { border-bottom: none; }
+  .toggle-label { font-size: 13px; }
+  .toggle-label small { display: block; font-size: 11px; color: #999; }
+  .switch {
+    position: relative; display: inline-block;
+    width: 40px; height: 22px;
+  }
+  .switch input { opacity: 0; width: 0; height: 0; }
+  .slider-sw {
+    position: absolute; cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #ccc; border-radius: 22px;
+    transition: .3s;
+  }
+  .slider-sw:before {
+    position: absolute; content: "";
+    height: 16px; width: 16px;
+    left: 3px; bottom: 3px;
+    background: white; border-radius: 50%;
+    transition: .3s;
+  }
+  input:checked + .slider-sw { background: var(--teal); }
+  input:checked + .slider-sw:before { transform: translateX(18px); }
+
+  /* GROCERY BASKET */
+  .basket-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .basket-item {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .basket-item.active {
+    border-color: var(--teal);
+    background: var(--teal-light);
+  }
+  .basket-item .bi-name { font-weight: 600; font-size: 12px; }
+  .basket-item .bi-price { font-size: 13px; color: var(--teal); font-weight: 700; }
+  .basket-item .bi-desc { font-size: 10px; color: #888; margin-top: 2px; }
+
+  .grocery-adj { margin-top: 12px; }
+  .grocery-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 12px;
+  }
+  .grocery-row:last-child { border-bottom: none; }
+  .grocery-row input {
+    width: 80px; text-align: right;
+    padding: 4px 8px; font-size: 12px;
+    border: 1.5px solid var(--border); border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* RESULTS PANEL */
+  .results-sticky {
+    position: sticky;
+    top: 24px;
+  }
+  .results-panel {
+    background: var(--ink);
+    color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-strong);
+  }
+  .results-header {
+    background: var(--teal);
+    padding: 20px 24px;
+    text-align: center;
+  }
+  .results-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .results-header p { font-size: 12px; opacity: 0.8; }
+
+  .results-body { padding: 20px 24px; }
+
+  .result-total {
+    text-align: center;
+    padding: 20px 0 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 16px;
+  }
+  .result-total .amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    color: var(--teal-mid);
+    line-height: 1;
+  }
+  .result-total .period { font-size: 12px; opacity: 0.5; margin-top: 4px; }
+  .result-total .annual {
+    font-size: 13px; opacity: 0.6; margin-top: 8px;
+  }
+  .result-total .annual strong { color: var(--gold); }
+
+  .result-line {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 12px;
+  }
+  .result-line:last-child { border-bottom: none; }
+  .result-line .rl-name { color: rgba(255,255,255,0.65); }
+  .result-line .rl-val { font-weight: 600; color: white; }
+  .result-line .rl-val.zero { color: rgba(255,255,255,0.25); }
+
+  .result-section-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--teal-mid);
+    margin: 14px 0 6px;
+  }
+
+  .result-bar {
+    height: 5px; border-radius: 3px;
+    background: rgba(255,255,255,0.07);
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .result-bar-fill {
+    height: 100%; border-radius: 3px;
+    background: linear-gradient(to right, var(--teal), var(--teal-mid));
+    transition: width 0.4s ease;
+  }
+
+  .one-time-box {
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 14px;
+  }
+  .one-time-box .otb-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 8px;
+  }
+  .one-time-box .otb-line {
+    display: flex; justify-content: space-between;
+    font-size: 12px; padding: 4px 0;
+    color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+  }
+  .one-time-box .otb-line:last-child { border-bottom: none; }
+  .one-time-box .otb-total {
+    display: flex; justify-content: space-between;
+    font-size: 14px; padding-top: 8px; margin-top: 4px;
+    font-weight: 700; color: var(--gold);
+  }
+
+  .alert-box {
+    background: rgba(192,57,43,0.15);
+    border: 1px solid rgba(192,57,43,0.4);
+    border-radius: 6px; padding: 10px 14px;
+    font-size: 11px; color: #ff9f9f; margin-top: 12px;
+    line-height: 1.5;
+  }
+
+  .tip-box {
+    background: rgba(26,122,74,0.15);
+    border: 1px solid rgba(26,122,74,0.4);
+    border-radius: 6px; padding: 10px 14px;
+    font-size: 11px; color: #7de0a8; margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  /* TABS */
+  .tabs { display: flex; gap: 0; margin-bottom: 16px; border-radius: 6px; overflow: hidden; border: 1.5px solid var(--border); }
+  .tab {
+    flex: 1; padding: 8px 6px; text-align: center;
+    font-size: 11px; font-weight: 600; cursor: pointer;
+    background: white; color: #888;
+    border-right: 1px solid var(--border);
+    transition: all 0.15s;
+  }
+  .tab:last-child { border-right: none; }
+  .tab.active { background: var(--teal); color: white; }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--teal);
+    padding: 0 0 10px;
+    border-bottom: 2px solid var(--teal-light);
+    margin-bottom: 14px;
+  }
+
+  /* PET CARDS */
+  .pet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .pet-card {
+    border: 1.5px solid var(--border); border-radius: 8px;
+    padding: 12px; cursor: pointer; background: white; text-align: center;
+    transition: all 0.15s;
+  }
+  .pet-card:hover { border-color: var(--teal-mid); }
+  .pet-card.active { border-color: var(--teal); background: var(--teal-light); }
+  .pet-card .pc-icon { font-size: 24px; margin-bottom: 4px; }
+  .pet-card .pc-name { font-size: 12px; font-weight: 600; }
+  .pet-card .pc-cost { font-size: 11px; color: var(--teal); }
+
+  /* FOOTER */
+  .calc-footer {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* PRINT BUTTON */
+  .btn-print {
+    width: 100%; margin-top: 14px;
+    padding: 12px;
+    background: var(--gold);
+    color: var(--ink);
+    border: none; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .btn-print:hover { opacity: 0.88; }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .results-sticky { position: static; }
+    .header h1 { font-size: 26px; }
+  }
+  @media print {
+    .results-sticky { position: static; }
+    .panel-body { display: block !important; }
+    .btn-print { display: none; }
+  }
+
+
+/* Override calculator body bg to inherit */
+body.guide-body { background: var(--paper) !important; }
+.calc-embed { background: var(--paper); }
+
+/* ===== FOOTER ===== */
+.guide-footer {
+  background: var(--ink); color: rgba(255,255,255,0.5);
+  padding: 40px 60px; font-size: 12px; text-align: center;
+  margin-left: 0; line-height: 1.8;
+}
+.guide-footer strong { color: rgba(255,255,255,0.8); }
+
+/* ===== SCROLL TO TOP ===== */
+.scroll-top {
+  position: fixed; bottom: 32px; right: 32px;
+  width: 44px; height: 44px; background: var(--teal);
+  color: white; border: none; border-radius: 50%;
+  font-size: 18px; cursor: pointer;
+  box-shadow: 0 4px 16px rgba(15,102,116,0.4);
+  display: none; align-items: center; justify-content: center;
+  z-index: 200;
+  transition: opacity 0.2s;
+}
+.scroll-top.visible { display: flex; }
+
+@media (max-width: 900px) {
+  .sidenav { display: none; }
+  .main { margin-left: 0; }
+  .hero { padding: 40px 24px 36px; }
+  .hero h1 { font-size: 32px; }
+  .section { padding: 40px 24px; }
+  .quick-ref-grid { grid-template-columns: 1fr; }
+  .salary-grid { grid-template-columns: 1fr 1fr; }
+  .grid { grid-template-columns: 1fr !important; }
+  .results-sticky { position: static !important; }
+  .calc-intro { padding: 32px 24px 24px; }
+}
+
+/* ===== MULTILINGUAL SYSTEM ===== */
+.lang-bar {
+  position: fixed;
+  top: 0; left: 220px; right: 0;
+  background: #0d1117;
+  border-bottom: 1px solid rgba(15,102,116,0.4);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 44px;
+  z-index: 150;
+  gap: 6px;
+  overflow-x: auto;
+}
+.lang-bar::-webkit-scrollbar { height: 3px; }
+.lang-bar::-webkit-scrollbar-thumb { background: var(--teal); }
+
+.lang-btn {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: transparent;
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+  letter-spacing: 0.3px;
+}
+.lang-btn:hover { color: white; border-color: var(--teal-mid); }
+.lang-btn.active {
+  background: var(--teal);
+  color: white;
+  border-color: var(--teal);
+}
+.lang-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  margin-right: 8px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Translation handled by Google Translate */
+
+/* Country context banner */
+.country-banner {
+  display: none;
+  background: linear-gradient(135deg, var(--teal) 0%, #0a4a55 100%);
+  color: white;
+  padding: 14px 60px;
+  margin: 0;
+  border-bottom: 2px solid var(--gold);
+}
+.country-banner.visible { display: block; }
+.country-banner h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.country-banner p { font-size: 12px; opacity: 0.85; max-width: 800px; line-height: 1.5; }
+.country-banner .cb-links { margin-top: 10px; display: flex; gap: 16px; flex-wrap: wrap; }
+.country-banner .cb-link {
+  font-size: 11px; color: var(--teal-mid);
+  text-decoration: none; border-bottom: 1px solid rgba(126,200,211,0.4);
+}
+.country-banner .cb-link:hover { color: white; border-color: white; }
+
+/* Offset main content for lang bar */
+.main { padding-top: 44px; }
+.hero { padding-top: 100px; }
+@media (max-width: 900px) {
+  .lang-bar { left: 0; }
+  .hero { padding-top: 120px; }
+}
+
+</style>
+</head>
+<body>
+<script>
+window.onerror = function(msg, src, line, col, err) {
+  var div = document.getElementById('__err_display');
+  if (!div) {
+    div = document.createElement('div');
+    div.id = '__err_display';
+    div.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#c00;color:#fff;padding:12px;font-size:12px;font-family:monospace;z-index:99999;max-height:40vh;overflow:auto;';
+    document.body.appendChild(div);
+  }
+  div.innerHTML += '<div>❌ ' + msg + '<br>Line: ' + line + ', Col: ' + col + '<br>File: ' + (src||'inline') + '</div><hr>';
+  return false;
+};
+window.addEventListener('unhandledrejection', function(e) {
+  window.onerror('Unhandled Promise: ' + e.reason, '', 0, 0, e.reason);
+});
+</script>
+
+<!-- TRANSLATION HELPER (managed by JS) -->
+<div id="google_translate_element" style="display:none"></div>
+
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+  <span class="lang-label">🌍 Language</span>
+  <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
+  <button class="lang-btn" data-lang="ru">🇷🇺 RU</button>
+  <button class="lang-btn" data-lang="uk">🇺🇦 UA</button>
+  <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
+  <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+  <button class="lang-btn" data-lang="pl">🇵🇱 PL</button>
+  <button class="lang-btn" data-lang="he">🇮🇱 HE</button>
+  <button class="lang-btn" data-lang="hi">🇮🇳 HI</button>
+  <button class="lang-btn" data-lang="ar">🇸🇦 AR</button>
+  <button class="lang-btn" data-lang="zh">🇨🇳 ZH</button>
+  <button class="lang-btn" data-lang="ko">🇰🇷 KO</button>
+</div>
+
+<!-- COUNTRY CONTEXT BANNERS (shown based on selected language) -->
+<div class="country-banner" id="banner-ru">
+  <h4>🇷🇺 Специально для врачей из России и стран СНГ</h4>
+  <p>Справка о несудимости из России — только через лист ожидания в консульстве. Начните этот процесс ПЕРВЫМ. Требуется апостиль + заверенный перевод на английский. Ваш диплом советской/российской медицинской школы принимается MCNZ, но требует верификации через MyIntealth.</p>
+  <div class="cb-links">
+    <a class="cb-link" href="https://www.mcnz.org.nz/registration/getting-registered/registration-pathways/pathways-to-registration-in-a-vocational-scope/voc3-provisional-vocational-specialist-registration/">VOC3 Pathway →</a>
+    <a class="cb-link" href="https://www.gildlegal.co.nz">Yana Gild (адвокат, русскоязычный) →</a>
+    <a class="cb-link" href="https://myintealth.ecfmg.org">MyIntealth →</a>
+    <a class="cb-link" href="https://www.chabad.org.nz">Русскоязычное сообщество Auckland →</a>
+  </div>
+</div>
+
+<div class="country-banner" id="banner-uk">
+  <h4>🇺🇦 Для лікарів з України</h4>
+  <p>Нова Зеландія активно приймає українських медиків. Ваш диплом державного медичного університету України визнається MCNZ через VOC3 pathway. Справка про несудимість з України — через Міністерство внутрішніх справ + апостиль + переклад. Є спеціальні програми підтримки для українських біженців.</p>
+  <div class="cb-links">
+    <a class="cb-link" href="https://www.immigration.govt.nz/new-zealand-visas/already-have-a-visa/check-your-visa-details-and-conditions/working-in-new-zealand/new-zealand-green-list">Green List NZ →</a>
+    <a class="cb-link" href="https://www.mcnz.org.nz/registration/getting-registered/tool/">MCNZ Self-Assessment →</a>
+    <a class="cb-link" href="https://www.triple0.com">Triple0 Medical Recruitment →</a>
+    <a class="cb-link" href="https://www.immigration.govt.nz/live/setting-up-your-life-in-new-zealand/">Settlement Support NZ →</a>
+  </div>
+</div>
+
+<div class="country-banner" id="banner-hi">
+  <h4>🇮🇳 For Doctors from India (IMG Pathway)</h4>
+  <p>India is one of the largest sources of IMG doctors in New Zealand. Your MBBS + MD/MS from an MCI/NMC-recognised college is accepted by MCNZ. Key differences: MBBS alone may require additional specialist training evidence. Many Indian doctors pursue the FRACP/FANZCA pathway alongside VOC3. Indian police certificate (PCC) from the Passport Seva Portal — apply early, takes 3-4 weeks.</p>
+  <div class="cb-links">
+    <a class="cb-link" href="https://www.mcnz.org.nz/registration/getting-registered/tool/">MCNZ Registration Self-Assessment →</a>
+    <a class="cb-link" href="https://www.triple0.com">Triple0 Medical (recruit IMG doctors) →</a>
+    <a class="cb-link" href="https://www.immigration.govt.nz/new-zealand-visas/already-have-a-visa/check-your-visa-details-and-conditions/working-in-new-zealand/new-zealand-green-list">Green List — Anaesthesiology →</a>
+    <a class="cb-link" href="https://myintealth.ecfmg.org">MyIntealth Credential Verification →</a>
+  </div>
+</div>
+
+<div class="country-banner" id="banner-de">
+  <h4>🇩🇪 Für Ärzte aus Deutschland, Österreich und der Schweiz</h4>
+  <p>Deutsche Facharztabschlüsse werden von MCNZ sehr positiv bewertet. Der VOC3-Weg ist für Sie der schnellste Pfad. Wichtig: Ihr Führungszeugnis (Bundeszentralregister) muss apostilliert und ins Englische übersetzt werden. Die Anästhesiologie steht auf der NZ Green List — das beschleunigt Ihren Aufenthaltstitel erheblich.</p>
+  <div class="cb-links">
+    <a class="cb-link" href="https://www.mcnz.org.nz/registration/getting-registered/registration-pathways/pathways-to-registration-in-a-vocational-scope/voc3-provisional-vocational-specialist-registration/">VOC3 Pathway →</a>
+    <a class="cb-link" href="https://www.triple0.com">Triple0 Medical Recruitment →</a>
+    <a class="cb-link" href="https://www.immigration.govt.nz/new-zealand-visas/already-have-a-via/check-your-visa-details-and-conditions/working-in-new-zealand/new-zealand-green-list">NZ Green List →</a>
+  </div>
+</div>
+
+
+<!-- SIDEBAR NAVIGATION -->
+<nav class="sidenav">
+  <div class="sidenav-logo">
+    <div class="flag">🇳🇿</div>
+    <div class="title">Doctor to New Zealand</div>
+    <div class="sub">Complete Guide 2026</div>
+  </div>
+  <div class="nav-section">Overview</div>
+  <a class="nav-item active">Introduction</a>
+  <a class="nav-item" data-section="links">Quick Links</a>
+  <a class="nav-item" data-section="resources">🗂️ Immigrant Resources</a>
+  <div class="nav-section">Registration</div>
+  <a class="nav-item" data-section="ch1">1. CV & Recruiters</a>
+  <a class="nav-item" data-section="ch2">2. Language Exams</a>
+  <a class="nav-item" data-section="ch3">3. VOC3 Pathway</a>
+  <a class="nav-item" data-section="ch4">4. Visa</a>
+  <a class="nav-item" data-section="ch5">5. Recruiters</a>
+  <div class="nav-section">Life in NZ</div>
+  <a class="nav-item" data-section="ch6">6. Finances & Salary</a>
+  <a class="nav-item" data-section="ch7">7. Family Life</a>
+  <a class="nav-item" data-section="ch8">8. Passive Income</a>
+  <div class="nav-section">Settling In NZ</div>
+  <a class="nav-item" data-section="medexam">🩺 Medical Exam</a>
+  <a class="nav-item" data-section="altpathway">🎓 Alternative Pathway</a>
+  <a class="nav-item" data-section="taxes">💴 Taxes & KiwiSaver</a>
+  <a class="nav-item" data-section="renting">🔑 Renting a Home</a>
+  <a class="nav-item" data-section="car">🚗 Buying a Car</a>
+  <a class="nav-item" data-section="culture">🥝 Culture & Surprises</a>
+  <a class="nav-item" data-section="safety">🌋 Safety & Earthquakes</a>
+  <div class="nav-section">Tools</div>
+  <a class="nav-item" data-section="nzready">✅ NZ Ready Checklist</a>
+  <a class="nav-item" data-section="calculator">💰 Cost Calculator</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="hero-badge">🇳🇿 Complete Guide — Edition 2026</div>
+  <h1>Doctor to <em>New Zealand</em></h1>
+  <p class="sub">A step-by-step guide for internationally qualified doctors — from first CV to first day at work. Includes verified links, salary data, AI prompts, and an interactive cost calculator.</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="val">8 Chapters</span><span class="lbl">Full pathway coverage</span></div>
+    <div class="hero-meta-item"><span class="val">50+ Links</span><span class="lbl">All official resources</span></div>
+    <div class="hero-meta-item"><span class="val">10 AI Prompts</span><span class="lbl">Ready to use</span></div>
+    <div class="hero-meta-item"><span class="val">Cost Calculator</span><span class="lbl">10 cities · full budget</span></div>
+    <div class="hero-meta-item"><span class="val">Vladislav Fridman</span><span class="lbl">Senior Anaesthesiologist, Israel → NZ</span></div>
+  </div>
+</div>
+
+<!-- QUICK LINKS -->
+<div class="section" id="links">
+  <div class="section-header">
+    <div class="chapter-num">Quick Reference</div>
+    <h2>All Official Links</h2>
+  </div>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🏛️ MCNZ — Registration</div>
+      <a href="https://www.mcnz.org.nz">MCNZ Homepage</a>
+      <a href="https://www.mcnz.org.nz/registration/getting-registered/registration-pathways/pathways-to-registration-in-a-vocational-scope/voc3-provisional-vocational-specialist-registration/">VOC3 Pathway</a>
+      <a href="https://www.mcnz.org.nz/registration/getting-registered/tool/">Self-Assessment Tool</a>
+      <a href="https://www.mcnz.org.nz/registration/getting-registered/how-to-register/english-language-requirements-2/">English Requirements</a>
+      <a href="https://www.mcnz.org.nz/assets/Forms/VOC3.pdf">VOC3 Form (PDF)</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">📋 Credentials & Verification</div>
+      <a href="https://myintealth.ecfmg.org">MyIntealth Portal (EPIC)</a>
+      <a href="https://www.ecfmg.org/psv/instructions-new-zealand.html">EPIC Instructions for MCNZ</a>
+      <a href="https://www.mcnz.org.nz/registration/getting-registered/how-to-register/primary-source-verification-of-qualifications-epic/">MCNZ Verification Guide</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🛂 Immigration New Zealand</div>
+      <a href="https://www.immigration.govt.nz">Immigration NZ Homepage</a>
+      <a href="https://www.immigration.govt.nz/about-us/news-centre/student-visas/">Student Visas</a>
+      <a href="https://www.immigration.govt.nz/process-to-apply/once-you-have-a-visa/bringing-family-to-new-zealand/bringing-family-on-a-student-visa/">Bringing Family</a>
+      <a href="https://www.immigration.govt.nz/new-zealand-visas/already-have-a-visa/check-your-visa-details-and-conditions/working-in-new-zealand/new-zealand-green-list">Green List</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">📝 Language Exams</div>
+      <a href="https://www.occupationalenglishtest.org">OET — Book a Test</a>
+      <a href="https://www.pearsonpte.com">PTE Academic</a>
+      <a href="https://www.ielts.org">IELTS Academic</a>
+      <a href="https://www.triple0.com/blog/how-to-register-as-a-doctor-in-new-zealand">Triple0 IELTS/OET Guide</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">👩‍⚕️ Recruitment</div>
+      <a href="https://www.triple0.com">Triple0 Medical</a>
+      <a href="mailto:kimrichards@triple0.com">Kim Richards (Triple0)</a>
+      <a href="https://www.starship.org.nz">Starship Children's Hospital</a>
+      <a href="https://www.healthnz.govt.nz">Health New Zealand Jobs</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">⚖️ Immigration Lawyer</div>
+      <a href="https://www.gildlegal.co.nz">Gild Legal — Yana Gild</a>
+      <a href="mailto:yana.gild@gildlegal.co.nz">yana.gild@gildlegal.co.nz</a>
+      <a href="https://www.mpi.govt.nz/bring-send-to-nz/pets-travelling-to-nz/bringing-cats-and-dogs-to-nz/step-by-step-guide-to-bringing-cats-and-dogs-to-nz">Bringing Pets to NZ (MPI)</a>
+    </div>
+  </div>
+</div>
+
+<!-- IMMIGRANT RESOURCES -->
+<div class="section" id="resources" style="background:#f8f6f0;">
+  <div class="section-header">
+    <div class="chapter-num">Complete Resource Directory</div>
+    <h2>🗂️ Essential Links for New Immigrants in New Zealand</h2>
+    <p style="color:#555;margin-top:8px;font-size:14px;">All links verified in 2025–2026. Covers housing, schools, shopping, healthcare, government services, transport and everything you need to settle in NZ.</p>
+  </div>
+
+  <!-- HOUSING -->
+  <h3 style="margin-top:0;">🏠 Finding a Home</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🔑 Rental Property Search</div>
+      <a href="https://www.trademe.co.nz/a/property/residential/rent">TradeMe Property — NZ's #1 rental site</a>
+      <a href="https://www.realestate.co.nz">RealEstate.co.nz — industry-owned property site</a>
+      <a href="https://www.homes.co.nz">Homes.co.nz — valuations + listings</a>
+      <a href="https://www.oneroof.co.nz">OneRoof — rentals and sales</a>
+      <a href="https://www.realestate.co.nz/residential/rent">PropertyManager.co.nz — agency listings</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🛋️ Flatmates & Shared Housing</div>
+      <a href="https://www.nzflatmates.co.nz">NZ Flatmates — #1 flatting site in NZ</a>
+      <a href="https://www.trademe.co.nz/a/property/flatmates-wanted">TradeMe Flatmates Wanted</a>
+      <a href="https://www.flatmates.com.au/new-zealand">Flatmates.com.au/nz — Australian platform active in NZ</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏨 Short-Term on Arrival</div>
+      <a href="https://www.airbnb.co.nz">Airbnb NZ — furnished short-term stays</a>
+      <a href="https://www.booking.com/country/nz.en-gb.html">Booking.com — serviced apartments</a>
+      <a href="https://www.holidayhouses.co.nz">Holiday Houses — NZ short-term rentals</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">⚖️ Tenant Rights & Tenancy Law</div>
+      <a href="https://www.tenancy.govt.nz">Tenancy Services — official NZ government</a>
+      <a href="https://www.tenancy.govt.nz/starting-a-tenancy/bond/">Bond (deposit) explained</a>
+      <a href="https://www.tenancy.govt.nz/disputes/resolving-disputes/">Dispute resolution</a>
+      <a href="https://www.consumer.org.nz/articles/renting">Consumer NZ — renting guide</a>
+    </div>
+  </div>
+
+  <!-- SCHOOLS -->
+  <h3>📚 Schools — Primary, Intermediate & Secondary</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🔍 Find a School</div>
+      <a href="https://www.educationcounts.govt.nz/find-school">Education Counts — Official School Finder</a>
+      <a href="https://www.studywithnewzealand.govt.nz/en/study-options/schools/find-a-school">Study with NZ — Schools by Region</a>
+      <a href="https://www.education.govt.nz/school/enrolment-zones/">Enrolment Zones explained</a>
+      <a href="https://www.wisemove.co.nz/post/best-high-schools-new-zealand">Top 50 High Schools in NZ (2025 ranking)</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏫 Auckland Schools (Your Area)</div>
+      <a href="https://www.ponsonbyintermediate.school.nz">Ponsonby Intermediate (your son's school)</a>
+      <a href="https://www.ags.school.nz">Auckland Grammar School (top boys' secondary)</a>
+      <a href="https://www.educationcounts.govt.nz/find-school">Epsom Girls' Grammar</a>
+      <a href="https://www.macleans.school.nz">Macleans College (top co-ed secondary)</a>
+      <a href="https://www.westlake.school.nz">Westlake Boys / Girls High (North Shore)</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">👶 Early Childhood Education (ECE)</div>
+      <a href="https://www.education.govt.nz/early-childhood/">Ministry of Education — ECE guide</a>
+      <a href="https://www.education.govt.nz/early-childhood/">Kidstart — find ECE/kindergartens near you</a>
+      <a href="https://www.govt.nz/browse/family-and-whanau/">Family Services — NZ government support</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">📖 NZ Education System Explained</div>
+      <a href="https://www.education.govt.nz">Ministry of Education — complete guide</a>
+      <a href="https://www.nzqa.govt.nz">NZQA — qualifications authority</a>
+      <a href="https://www.ncea.govt.nz">NCEA — secondary school qualification system</a>
+      <a href="https://www.education.govt.nz/school/going-to-school/enrolling-in-school/">How to enrol your child in school</a>
+    </div>
+  </div>
+
+  <!-- LANGUAGE SCHOOLS -->
+  <h3>🗣️ English Language Schools</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">📍 Auckland — General English & Exam Prep</div>
+      <a href="https://english.co.nz">Auckland English Academy (AEA) — PTE/IELTS/General</a>
+      <a href="https://www.kiwienglish.co.nz">Kiwi English Academy — 30+ years, Newmarket</a>
+      <a href="https://nzlc.ac.nz">NZLC — Auckland & Wellington, one of the largest</a>
+      <a href="https://www.nsls.ac.nz">North Shore Language School — Category 1, NZQA</a>
+      <a href="https://www.ela.auckland.ac.nz">ELA — University of Auckland English Language Academy</a>
+      <a href="https://www.ais.ac.nz/study/english-language">AIS — Auckland Institute of Studies</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🆓 Free / Subsidised English for Migrants</div>
+      <a href="https://www.aut.ac.nz/study/study-options/language-and-culture/migrant-and-refugee-english-classes">AUT — Free English classes for migrants & refugees</a>
+      <a href="https://www.manukau.ac.nz/short-course/english-language-skills-for-migrants-and-refugees/">MIT — English for Migrants & Refugees</a>
+      <a href="https://www.immigration.govt.nz/live/setting-up-your-life-in-new-zealand/">Settlement.govt.nz — government settlement resources</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏆 Find & Compare Language Schools</div>
+      <a href="https://www.languageinternational.com/english-schools-auckland-19584">Language International — compare Auckland schools</a>
+      <a href="https://www.nzqa.govt.nz/providers-partners/directory-of-nzqa-accredited-providers/">NZQA Accredited Provider Directory</a>
+      <a href="https://www.studywithnewzealand.govt.nz">Study with NZ — official government study portal</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">📝 Medical English Exam Prep</div>
+      <a href="https://www.occupationalenglishtest.org/preparation-materials/">OET Official Preparation Materials</a>
+      <a href="https://www.pearsonpte.com/preparation">PTE Official Practice Materials</a>
+      <a href="https://www.ielts.org">IELTS — British Council NZ</a>
+      <a href="https://www.ielts.org">IELTS Pop NZ — local preparation courses</a>
+    </div>
+  </div>
+
+  <!-- SHOPPING -->
+  <h3>🛒 Shopping — Online Marketplaces & Retail</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🏆 Main NZ Marketplaces</div>
+      <a href="https://www.trademe.co.nz">TradeMe — NZ's #1 marketplace (eBay equivalent)</a>
+      <a href="https://www.facebook.com/marketplace">Facebook Marketplace — free, very active in NZ</a>
+      <a href="https://www.mightyape.co.nz">Mighty Ape — games, electronics, books, furniture</a>
+      <a href="https://www.themarket.com">The Market — NZ multi-retailer platform</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏪 Major NZ Retailers Online</div>
+      <a href="https://www.thewarehouse.co.nz">The Warehouse — NZ's largest general retailer</a>
+      <a href="https://www.countdown.co.nz">Countdown (now Woolworths NZ) — grocery delivery</a>
+      <a href="https://www.newworld.co.nz">New World — grocery delivery</a>
+      <a href="https://www.paknsave.co.nz">Pak'nSave — cheapest supermarket, find nearest</a>
+      <a href="https://www.mitre10.co.nz">Mitre 10 — hardware and home improvement</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">💲 Price Comparison</div>
+      <a href="https://www.pricespy.co.nz">PriceSpy NZ — compare prices across retailers</a>
+      <a href="https://www.staticice.co.nz">StaticIce NZ — price comparison</a>
+      <a href="https://www.getpricelist.co.nz">GetPricelist NZ</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🚗 Cars & Vehicles</div>
+      <a href="https://www.trademe.co.nz/a/motors">TradeMe Motors — #1 for used cars in NZ</a>
+      <a href="https://www.driven.co.nz">AutoTrader NZ</a>
+      <a href="https://www.aa.co.nz/cars/buying-a-car/">AA NZ — Car Buying Guide</a>
+      <a href="https://www.nzta.govt.nz/vehicles/buying-selling/buying-a-used-vehicle/">NZTA — Buying a Used Vehicle Safely</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🛋️ Secondhand & Furniture</div>
+      <a href="https://www.trademe.co.nz/a/marketplace/home-living">TradeMe Home & Living</a>
+      <a href="https://www.facebook.com/groups/aucklandbuyselltrade">Auckland Buy Sell Trade (Facebook)</a>
+      <a href="https://www.trademe.co.nz/a/marketplace">Sella.co.nz — NZ classifieds</a>
+      <a href="https://www.ikea.com/nz/en/">IKEA NZ — affordable furniture</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">💼 Jobs & Employment</div>
+      <a href="https://www.seek.co.nz">SEEK — NZ's leading job site</a>
+      <a href="https://www.trademe.co.nz/a/jobs">TradeMe Jobs</a>
+      <a href="https://www.linkedin.com/jobs/">LinkedIn Jobs NZ</a>
+      <a href="https://www.careers.govt.nz">Careers.govt.nz — NZ government careers guide</a>
+    </div>
+  </div>
+
+  <!-- GOVERNMENT SERVICES -->
+  <h3>🏛️ Government & Municipal Services</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🇳🇿 Core Government Portals</div>
+      <a href="https://www.govt.nz">Govt.nz — main NZ government portal</a>
+      <a href="https://www.immigration.govt.nz">Immigration New Zealand</a>
+      <a href="https://www.ird.govt.nz">Inland Revenue (IRD) — tax & IRD number</a>
+      <a href="https://www.justice.govt.nz">Ministry of Justice</a>
+      <a href="https://www.msd.govt.nz">Ministry of Social Development</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏥 Healthcare Services</div>
+      <a href="https://www.healthnz.govt.nz">Health New Zealand (Te Whatu Ora)</a>
+      <a href="https://www.healthpoint.co.nz">Healthpoint — find a GP near you</a>
+      <a href="https://www.acc.co.nz">ACC — Accident Compensation Corporation</a>
+      <a href="https://www.health.govt.nz">Ministry of Health</a>
+      <a href="https://www.healthify.nz">Healthify — health info in plain language</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🚗 Transport & Licensing</div>
+      <a href="https://www.nzta.govt.nz">NZTA — driving licences, vehicle registration</a>
+      <a href="https://www.at.govt.nz">Auckland Transport (AT) — bus, train, ferry</a>
+      <a href="https://www.at.govt.nz/bus-train-ferry/at-hop/">AT HOP Card — get yours first week</a>
+      <a href="https://www.metlink.org.nz">Metlink — Wellington public transport</a>
+      <a href="https://www.ecan.govt.nz/getting-around/metro/">Metro — Christchurch buses</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏙️ Auckland Council</div>
+      <a href="https://www.aucklandcouncil.govt.nz">Auckland Council — main portal</a>
+      <a href="https://www.aucklandcouncil.govt.nz/rubbish-recycling">Rubbish & Recycling schedules</a>
+      <a href="https://www.aucklandcouncil.govt.nz/libraries">Auckland Libraries — free with address</a>
+      <a href="https://www.aucklandcouncil.govt.nz/parks-recreation">Parks & Recreation</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">📋 Legal & Consumer Rights</div>
+      <a href="https://www.consumer.org.nz">Consumer NZ — rights and complaints</a>
+      <a href="https://www.tenancy.govt.nz">Tenancy Services — rental disputes</a>
+      <a href="https://www.worksafe.govt.nz">WorkSafe NZ — workplace safety</a>
+      <a href="https://www.employment.govt.nz">Employment NZ — workplace rights</a>
+      <a href="https://communitylaw.org.nz">Community Law — free legal advice</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">💰 Banking & Finance</div>
+      <a href="https://www.anz.co.nz">ANZ Bank NZ — largest bank</a>
+      <a href="https://www.asb.co.nz">ASB Bank — popular with migrants</a>
+      <a href="https://www.bnz.co.nz">BNZ — Bank of New Zealand</a>
+      <a href="https://www.westpac.co.nz">Westpac NZ</a>
+      <a href="https://sorted.org.nz">Sorted — free government financial guidance</a>
+      <a href="https://www.ird.govt.nz/kiwisaver">KiwiSaver — NZ retirement savings scheme</a>
+    </div>
+  </div>
+
+  <!-- UTILITIES -->
+  <h3>⚡ Utilities — Power, Gas, Internet</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">⚡ Electricity & Gas Providers</div>
+      <a href="https://www.mercury.co.nz">Mercury Energy — electricity + gas + internet</a>
+      <a href="https://contact.co.nz">Contact Energy — electricity + gas + broadband</a>
+      <a href="https://www.electrickiwi.co.nz">Electric Kiwi — award-winning, budget-friendly</a>
+      <a href="https://www.flick.energy">Flick Electric — spot pricing, transparent</a>
+      <a href="https://electricityoffers.co.nz">Compare electricity providers by address</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🌐 Internet (Broadband) Providers</div>
+      <a href="https://www.spark.co.nz">Spark NZ — largest telco, fibre + mobile</a>
+      <a href="https://www.one.nz">One NZ (Vodafone) — fibre + mobile</a>
+      <a href="https://www.2degrees.nz">2degrees — competitive mobile + broadband</a>
+      <a href="https://www.orcon.co.nz">Orcon — fibre broadband</a>
+      <a href="https://www.broadbandcompare.co.nz">BroadbandCompare — compare all plans</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">💧 Water & Council Rates</div>
+      <a href="https://www.watercare.co.nz">Watercare — Auckland water services</a>
+      <a href="https://www.wellingtonwater.co.nz">Wellington Water</a>
+      <a href="https://www.aucklandcouncil.govt.nz/rates">Auckland Council Rates</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">📱 Mobile Plans</div>
+      <a href="https://www.spark.co.nz/shop/mobile/plans/">Spark Mobile Plans</a>
+      <a href="https://www.one.nz/personal/mobile/plans/">One NZ Mobile Plans</a>
+      <a href="https://www.2degrees.nz/plans/mobile">2degrees Mobile Plans</a>
+      <a href="https://www.broadbandcompare.co.nz">Compare All Mobile Plans NZ</a>
+    </div>
+  </div>
+
+  <!-- HEALTH INSURANCE -->
+  <h3>🏥 Health Insurance — Private Providers</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🩺 Top Private Health Insurers</div>
+      <a href="https://www.southerncross.co.nz">Southern Cross Health Society — most popular</a>
+      <a href="https://www.nib.co.nz">nib NZ — popular with immigrants, good online tools</a>
+      <a href="https://www.accuro.co.nz">Accuro — NZ-owned, competitive rates</a>
+      <a href="https://www.unimed.co.nz">UniMed — doctor-owned cooperative</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🔍 Compare Insurance</div>
+      <a href="https://www.canstar.co.nz/health-insurance/">Canstar — compare health insurance NZ</a>
+      <a href="https://www.moneyhub.co.nz/health-insurance.html">MoneyHub — health insurance guide NZ</a>
+      <a href="https://www.consumer.org.nz/articles/health-insurance-buying-guide">Consumer NZ — health insurance guide</a>
+    </div>
+  </div>
+
+  <!-- COMMUNITY & SOCIAL -->
+  <h3>👥 Community, Social & Migrant Support</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🌏 Migrant & Ethnic Community</div>
+      <a href="https://kiwieducation.ru/nz/">Kiwi Education — Russian-language NZ guide (врачи, иммиграция)</a>
+      <a href="https://kiwieducation.ru/nz/study/immigracziya-dlya-vrachej-v-novuyu-zelandiyu/">Kiwi Education — Doctors pathway (на русском)</a>
+      <a href="https://www.immigration.govt.nz/live/setting-up-your-life-in-new-zealand/">Settlement — Immigration NZ guide</a>
+      <a href="https://www.ethniccommunities.govt.nz">Ministry for Ethnic Communities</a>
+      <a href="https://www.tpk.govt.nz/en/whakamahia/te-reo-maori">Te Reo — Māori language and culture</a>
+      <a href="https://www.nzjewish.org.nz">New Zealand Jewish Council</a>
+      <a href="https://www.chabad.org.nz">Chabad Auckland — Russian-speaking rabbi</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🆘 Emergency & Support Services</div>
+      <a href="tel:111">Emergency: 111 (Police, Fire, Ambulance)</a>
+      <a href="tel:105">Police non-emergency: 105</a>
+      <a href="https://www.healthline.govt.nz">Healthline: 0800 611 116 (free 24/7)</a>
+      <a href="https://www.lifeline.org.nz">Lifeline NZ — mental health support</a>
+      <a href="https://www.cab.org.nz">Citizens Advice Bureau — free advice, 200+ centres</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🗣️ Language & Interpreting Services</div>
+      <a href="https://www.ethniccommunities.govt.nz/services/language-line/">Language Line — free phone interpreting, 300+ languages</a>
+      <a href="https://www.ethniccommunities.govt.nz/services/language-line/">NZIS — NZ Interpreting Services</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏋️ Recreation & Leisure</div>
+      <a href="https://www.aucklandcouncil.govt.nz/parks-recreation/our-facilities">Auckland Council Leisure Centres</a>
+      <a href="https://www.doc.govt.nz">DOC — Department of Conservation (national parks, hikes)</a>
+      <a href="https://www.eventfinda.co.nz">Eventfinda — events in NZ cities</a>
+      <a href="https://www.aucklandlibraries.govt.nz">Auckland Libraries — free membership</a>
+    </div>
+  </div>
+
+  <!-- TRAVEL & TRANSPORT -->
+  <h3>✈️ Travel Within NZ & Back to Israel</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">✈️ International & Domestic Flights</div>
+      <a href="https://www.airnewzealand.co.nz">Air New Zealand — main NZ carrier</a>
+      <a href="https://www.jetstar.com">Jetstar — budget domestic flights</a>
+      <a href="https://www.skyscanner.co.nz">Skyscanner — compare international fares</a>
+      <a href="https://www.google.com/flights">Google Flights — NZ → Israel route finder</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🚆 Getting Around NZ</div>
+      <a href="https://www.at.govt.nz">Auckland Transport (AT)</a>
+      <a href="https://www.at.govt.nz/bus-train-ferry/at-hop/">AT HOP Card — register your card</a>
+      <a href="https://www.metlink.org.nz">Metlink Wellington</a>
+      <a href="https://www.intercity.co.nz">InterCity — national bus network</a>
+      <a href="https://www.greatjourneysofnz.co.nz">Great Journeys of NZ — scenic rail</a>
+    </div>
+  </div>
+
+  <!-- USEFUL APPS -->
+  <h3>📱 Must-Have Apps in NZ</h3>
+  <div class="quick-ref-grid">
+    <div class="qr-card">
+      <div class="qrc-title">🗺️ Navigation & Transport</div>
+      <a href="https://www.at.govt.nz/bus-train-ferry/journey-planner/">AT Journey Planner — Auckland</a>
+      <a href="https://www.google.com/maps">Google Maps — works excellently in NZ</a>
+      <a href="https://waze.com">Waze — popular for driving in Auckland</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">💰 Finance & Banking</div>
+      <a href="https://www.pocketsmith.com">PocketSmith — NZ budgeting app (Hamilton-based)</a>
+      <a href="https://sorted.org.nz/tools/budget-tool/">Sorted Budget Tool — free government tool</a>
+      <a href="https://www.wise.com">Wise — send money Israel ↔ NZ (cheapest rates)</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🏥 Healthcare Apps</div>
+      <a href="https://www.myindici.co.nz">MyIndici — book GP appointments online</a>
+      <a href="https://www.healthpoint.co.nz">Healthpoint — find doctors, specialists</a>
+      <a href="https://www.pharmac.govt.nz">PHARMAC — NZ funded medications list</a>
+    </div>
+    <div class="qr-card">
+      <div class="qrc-title">🌤️ Weather & Emergency</div>
+      <a href="https://www.metservice.com">MetService — official NZ weather forecasts</a>
+      <a href="https://getready.govt.nz">GetReady.govt.nz — NZ emergency preparedness</a>
+      <a href="https://www.civildefence.govt.nz">Civil Defence — earthquakes, emergencies</a>
+    </div>
+  </div>
+
+  <div class="callout tip" style="margin-top:24px;max-width:none;">
+    <div class="callout-title">💡 First Week Checklist — Links to Use Immediately on Arrival</div>
+    <p>In order of priority: <strong>IRD number</strong> (ird.govt.nz) → <strong>Bank account</strong> (ANZ or ASB) → <strong>AT HOP card</strong> (at.govt.nz/at-hop) → <strong>GP registration</strong> (healthpoint.co.nz) → <strong>School enrolment</strong> (ponsonbyintermediate.school.nz) → <strong>Power connection</strong> (mercury.co.nz or electrickiwi.co.nz) → <strong>Broadband</strong> (broadbandcompare.co.nz) → <strong>Driver's licence conversion</strong> (nzta.govt.nz)</p>
+  </div>
+</div>
+
+<!-- CHAPTER 1 -->
+<div class="section" id="ch1">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 1</div>
+    <h2>First Steps — CV and Recruiters</h2>
+  </div>
+
+  <h3>1.1 Where to Start</h3>
+  <p>Most emigrating doctors make one mistake: they begin by studying all MCNZ requirements, get lost in bureaucracy, and waste months. The correct first step is to contact a medical recruiter in NZ.</p>
+  <p>Recruiters specialise in internationally qualified doctors (IMGs). They know all pathways and hospital requirements — and they work for free. Their commission is paid by the employer.</p>
+
+  <h3>1.2 Recommended Recruiter</h3>
+  <table class="info-table">
+    <tr><td>Agency</td><td>Triple0 Medical — triple0.com</td></tr>
+    <tr><td>Contact</td><td>Kim Richards | kimrichards@triple0.com | +64 3 564 1500</td></tr>
+    <tr><td>What they do</td><td>CV review, pathway guidance, hospital introductions, full support to employment</td></tr>
+    <tr><td>Cost to you</td><td>Free — employer pays the commission</td></tr>
+  </table>
+
+  <h3>1.3 NZ-Style CV — Key Points</h3>
+  <ul class="guide-list">
+    <li><strong>Length:</strong> 3–4 pages maximum</li>
+    <li><strong>Specificity:</strong> List exact types of anaesthesia performed — general, regional, neuraxial, paediatric, cardiac, obstetric</li>
+    <li><strong>Hospital context:</strong> Beilinson/Rabin (1,300 beds), Schneider Children's (leading paediatric centre), Herzliya Medical Centre</li>
+    <li><strong>Include:</strong> ICU experience, transplant experience if any, subspecialties</li>
+    <li><strong>Omit:</strong> Photo, date of birth, marital status</li>
+  </ul>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ VOC3 Registration Costs</div>
+    <p>The VOC3 pathway can cost up to NZD 10,000. Most hospitals reimburse this fully after you start work. Always confirm the reimbursement clause in writing before signing any contract.</p>
+  </div>
+
+  <div class="prompt-box">
+    <div class="pt">🤖 AI Prompt — First Email to Recruiter</div>
+    <code>Write a professional email to a New Zealand medical recruitment agency. I am an anaesthesiologist with 15 years of clinical experience, currently working in Israel (Herzliya Medical Centre). I have subspecialty training in paediatric anaesthesia (Schneider Children's Hospital). I plan to relocate to NZ in [date] and am seeking an anaesthesiology position in Auckland or Wellington. Email: approx. 150 words, professional and friendly tone.</code>
+  </div>
+</div>
+
+<!-- CHAPTER 2 -->
+<div class="section" id="ch2">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 2</div>
+    <h2>Language Exams — OET, PTE, IELTS</h2>
+  </div>
+
+  <h3>2.1 MCNZ Exact Score Requirements</h3>
+  <table class="info-table">
+    <tr><td>IELTS Academic</td><td>Overall 7.5 | Listening 7.5 | Reading 7.0 | Writing 7.0 | Speaking 7.5</td></tr>
+    <tr><td>OET Medical</td><td>Minimum Grade B in ALL four sub-tests</td></tr>
+    <tr><td>PTE Academic</td><td>Overall 65 | No skill below 65</td></tr>
+    <tr><td>Score validity</td><td>2 years from test date</td></tr>
+    <tr><td>Combined sittings</td><td>NOT allowed — all scores must come from one sitting</td></tr>
+  </table>
+
+  <div class="callout danger">
+    <div class="callout-title">⚠️ No OET Courses in Auckland</div>
+    <p>There are no in-person OET preparation courses in Auckland. If you are studying in Auckland, enrol in a PTE course and prepare for OET online in parallel. Sit both — whichever you pass first counts.</p>
+  </div>
+
+  <div class="prompt-box">
+    <div class="pt">🤖 AI Prompt — OET Speaking Roleplay</div>
+    <code>Play a patient role for OET Speaking roleplay. Scenario: 52-year-old patient scheduled for elective cholecystectomy, anxious about general anaesthesia. I am the anaesthesiologist doing the pre-operative assessment. After the roleplay, give structured feedback: clinical language, ability to explain risks clearly, reassurance technique, fluency.</code>
+  </div>
+</div>
+
+<!-- CHAPTER 3 -->
+<div class="section" id="ch3">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 3</div>
+    <h2>VOC3 Pathway — MCNZ Registration</h2>
+  </div>
+
+  <table class="info-table">
+    <tr><td>Pathway</td><td>VOC3 — Provisional Vocational (Specialist) Registration</td></tr>
+    <tr><td>Processing time</td><td>~3 months once complete application received</td></tr>
+    <tr><td>Cost</td><td>Up to NZD 10,000 (reimbursed by employer)</td></tr>
+    <tr><td>Supervision</td><td>12–18 months before Full Vocational Registration</td></tr>
+  </table>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 VOC3 Official Resources</div>
+    <a href="https://www.mcnz.org.nz/registration/getting-registered/registration-pathways/pathways-to-registration-in-a-vocational-scope/voc3-provisional-vocational-specialist-registration/">VOC3 Full MCNZ Guide</a>
+    <a href="https://www.mcnz.org.nz/assets/Forms/VOC3.pdf">VOC3 Application Form (PDF)</a>
+    <a href="https://www.mcnz.org.nz/registration/getting-registered/tool/">MCNZ Self-Assessment Tool</a>
+    <a href="https://myintealth.ecfmg.org">MyIntealth — Start Verification</a>
+  </div>
+
+  <h3>3.1 The 10 Steps of VOC3</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-content"><div class="step-title">Create MyIntealth account → upload qualifications</div><p>Start immediately — verification takes 6–12 weeks</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-content"><div class="step-title">MCNZ contacts your institutions directly</div><p>They verify your medical degree and specialist certificate at the source</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-content"><div class="step-title">Submit VOC3 application with all documents</div><p>Use the VOC3 form; include three RP6 referee reports</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-content"><div class="step-title">ANZCA assesses your file</div><p>Australian and New Zealand College of Anaesthetists reviews your qualifications</p></div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-content"><div class="step-title">Interview with MCNZ</div><p>In Auckland, Wellington, Christchurch, Dunedin, or online</p></div></div>
+    <div class="step"><div class="step-num">6</div><div class="step-content"><div class="step-title">Provisional Vocational Registration granted</div><p>Either "Supervision" (12 months) or "Assessment" (up to 18 months)</p></div></div>
+    <div class="step"><div class="step-num">7</div><div class="step-content"><div class="step-title">Obtain employment offer from NZ hospital</div><p>Hospital submits your supervision plan to MCNZ</p></div></div>
+    <div class="step"><div class="step-num">8</div><div class="step-content"><div class="step-title">Supervised practice begins</div><p>Supervisor submits quarterly reports to MCNZ</p></div></div>
+    <div class="step"><div class="step-num">9</div><div class="step-content"><div class="step-title">Vocational Practice Assessment (VPA)</div><p>One-day workplace assessment by two ANZCA assessors</p></div></div>
+    <div class="step"><div class="step-num">10</div><div class="step-content"><div class="step-title">Full Vocational Registration</div><p>You can now practise independently as a consultant anaesthesiologist</p></div></div>
+  </div>
+
+  <div class="callout danger">
+    <div class="callout-title">⚠️ Start MyIntealth IMMEDIATELY</div>
+    <p>Primary source verification takes 6–12+ weeks depending on how quickly Israeli institutions respond. Create your account and upload documents as your very first step — before anything else. This determines your entire timeline.</p>
+  </div>
+</div>
+
+<!-- CHAPTER 4 -->
+<div class="section" id="ch4">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 4</div>
+    <h2>Visa — The Most Challenging Stage</h2>
+  </div>
+
+  <table class="info-table">
+    <tr><td>Student Visa</td><td>Language course. Work: 25 hrs/week during term (Nov 2025 update); full-time during breaks.</td></tr>
+    <tr><td>Partner Visa</td><td>Wife can get open work visa if your course qualifies under Green List.</td></tr>
+    <tr><td>Children</td><td>Dependent Child Student Visa — attend NZ state schools as domestic students (free).</td></tr>
+    <tr><td>Work Visa</td><td>Essential Skills Work Visa once employed by NZ hospital.</td></tr>
+    <tr><td>Residency</td><td>Skilled Migrant Category — anaesthesiology is on Green List (fast-track).</td></tr>
+  </table>
+
+  <div class="callout danger">
+    <div class="callout-title">⚠️ Police Certificate from Russia — Start This First</div>
+    <p>Booking at the Russian consulate is by waiting list only. Timelines are unpredictable. Start immediately. Requires apostille + certified English translation.</p>
+  </div>
+  <div class="callout danger">
+    <div class="callout-title">⚠️ Police Certificate from Israel</div>
+    <p>Israeli police certificates are NOT given to you directly — they are sent straight to Immigration NZ. Address: Immigration New Zealand National Office, PO Box 3705, Wellington 6140, New Zealand.</p>
+  </div>
+  <div class="callout warning">
+    <div class="callout-title">⚠️ Psychiatric Assessment</div>
+    <p>If a previous assessment noted anxiety or depression — obtain a new current assessment in English, specifically for immigration purposes. Not older than 12 months. State explicitly that the individual is fit for professional practice.</p>
+  </div>
+
+  <h3>Immigration Lawyer</h3>
+  <table class="info-table">
+    <tr><td>Recommended</td><td>Yana Gild — Gild Legal | Law Office</td></tr>
+    <tr><td>Email</td><td>yana.gild@gildlegal.co.nz</td></tr>
+    <tr><td>Phone</td><td>+64 4 390 0088 | +64 22 404 5005</td></tr>
+    <tr><td>Languages</td><td>Russian, English</td></tr>
+  </table>
+</div>
+
+<!-- CHAPTER 5 -->
+<div class="section" id="ch5">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 5</div>
+    <h2>Staying in Touch with Your Recruiter</h2>
+  </div>
+
+  <p>The gap between first contact and employment offer can be 12–18 months. Regular brief updates keep you visible and maintain the relationship.</p>
+
+  <ul class="guide-list">
+    <li>Every 4–6 weeks: brief status update (1 paragraph)</li>
+    <li>After milestones: exam booked, exam sat, visa received, arriving in NZ</li>
+    <li>3 months before you are ready to work: request current vacancies actively</li>
+    <li>On arrival in NZ: email immediately — now activate the relationship</li>
+  </ul>
+
+  <div class="prompt-box">
+    <div class="pt">🤖 AI Prompt — Follow-up Email to Kim Richards</div>
+    <code>Write a brief professional email to Kim Richards at Triple0 Medical (kimrichards@triple0.com). Update: still awaiting NZ visa, actively preparing for language exam, committed to working as consultant anaesthesiologist in Auckland. Interested in both general and paediatric anaesthesia roles. Please keep me informed of relevant vacancies. 80-100 words. Warm, professional tone.</code>
+  </div>
+</div>
+
+<!-- CHAPTER 6 -->
+<div class="section" id="ch6">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 6</div>
+    <h2>Financial Planning — What You Will Earn</h2>
+  </div>
+
+  <div class="salary-grid">
+    <div class="salary-card">
+      <div class="sc-label">Entry — First Role (VOC3 provisional)</div>
+      <div class="sc-amount">NZD 170–240K</div>
+      <div class="sc-sub">per year</div>
+    </div>
+    <div class="salary-card">
+      <div class="sc-label">Mid-Career (3–7 years NZ)</div>
+      <div class="sc-amount">NZD 280–380K</div>
+      <div class="sc-sub">per year</div>
+    </div>
+    <div class="salary-card">
+      <div class="sc-label">Senior Consultant (10+ years)</div>
+      <div class="sc-amount">NZD 400–500K+</div>
+      <div class="sc-sub">per year</div>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 Green List Advantage</div>
+    <p>Anaesthesiology is on New Zealand's Green List as a skill shortage specialty. This means faster permanent residency, no LMIA-equivalent required, and your partner may qualify for an open work visa while you study.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Salary & Financial Resources</div>
+    <a href="https://www.immigration.govt.nz/new-zealand-visas/already-have-a-visa/check-your-visa-details-and-conditions/working-in-new-zealand/new-zealand-green-list">NZ Green List — Verify Anaesthesiology</a>
+    <a href="https://www.ird.govt.nz">IRD — Apply for Tax Number (Day 1 priority)</a>
+    <a href="https://www.westpac.co.nz">Westpac NZ — Open Bank Account</a>
+    <a href="https://gumroad.com">Gumroad — Sell your guide passively</a>
+  </div>
+</div>
+
+<!-- CHAPTER 7 -->
+<div class="section" id="ch7">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 7</div>
+    <h2>Life in New Zealand — Family Guide</h2>
+  </div>
+
+  <h3>Schools for Your Children</h3>
+  <table class="info-table">
+    <tr><td>Your son (age 11)</td><td>Ponsonby Intermediate — Acceptance Letter already received. Free for dependent visa holders.</td></tr>
+    <tr><td>Younger child (age 3)</td><td>Early Childhood Education (ECE) — subsidised by NZ government</td></tr>
+    <tr><td>Language support</td><td>Free ESOL programmes in all state schools</td></tr>
+    <tr><td>Cost</td><td>State schools: free. Voluntary donations and extracurriculars extra.</td></tr>
+  </table>
+
+  <h3>Practical Setup on Arrival</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-content"><div class="step-title">Apply for IRD number (Tax ID)</div><p>Apply at ird.govt.nz on day of arrival — needed to work legally</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-content"><div class="step-title">Open a NZ bank account</div><p>Westpac, ANZ, BNZ, or ASB — bring passport + enrollment letter</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-content"><div class="step-title">Enrol children in school</div><p>Bring birth certificates, previous school records, passport copies</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-content"><div class="step-title">Register with a GP</div><p>Enrolled patients pay 30–50% less per consultation than walk-ins</p></div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-content"><div class="step-title">Convert your Israeli driver's licence</div><p>Valid for 12 months, then convert at NZTA. Book the conversion early.</p></div></div>
+  </div>
+</div>
+
+<!-- CHAPTER 8 -->
+<div class="section" id="ch8">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 8</div>
+    <h2>Creating Passive Income During Your Transition</h2>
+  </div>
+
+  <p>Your personal experience relocating from Israel to NZ via the VOC3 pathway is genuinely valuable to others on the same path. A practical guide from a colleague who has done it is worth paying for — and can be sold passively while you study.</p>
+
+  <table class="info-table">
+    <tr><td>This guide (Russian)</td><td>NZD IMG doctors from CIS | Price: USD 19–49</td></tr>
+    <tr><td>This guide (English)</td><td>International doctors worldwide | Price: USD 29–69</td></tr>
+    <tr><td>Document templates</td><td>CV, reference letters, cover letters | Price: USD 9–19</td></tr>
+    <tr><td>OET prompt pack</td><td>50 AI prompts for exam practice | Price: USD 15–29</td></tr>
+    <tr><td>1:1 Consultation</td><td>30-min Zoom — answer specific questions | Price: USD 50–150</td></tr>
+  </table>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Sell Your Guide On</div>
+    <a href="https://gumroad.com">Gumroad — Simplest for digital products</a>
+    <a href="https://www.patreon.com">Patreon — Subscription community model</a>
+    <a href="https://ko-fi.com">Ko-fi — Sell products + accept tips</a>
+  </div>
+
+  <div class="prompt-box">
+    <div class="pt">🤖 AI Prompt — Telegram Post (Russian) About Visa Challenges</div>
+    <code>Write a practical, honest Telegram post in Russian (300-400 words) about the most frustrating part of collecting documents for a New Zealand visa as an Israeli doctor. Specifically: police certificate from Russia (waiting list, apostille), and the Israeli certificate that goes directly to Immigration NZ. First-person, conversational style. End with call-to-action linking to a guide with full details.</code>
+  </div>
+</div>
+
+
+
+<!-- MEDICAL EXAMINATION SECTION -->
+<div class="section" id="medexam">
+  <div class="section-header">
+    <div class="chapter-num">Chapter 4 — Supplement</div>
+    <h2>🩺 Medical Examination for Your Visa</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">A detail most guides miss — how to find approved doctors in your country and get results sent directly to Immigration NZ.</p>
+  </div>
+
+  <h3 style="margin-top:0">What You Need</h3>
+  <p>If you are staying in NZ for more than 12 months, you need two medical documents:</p>
+  <table class="info-table">
+    <tr><td>General Medical Certificate</td><td>Full health examination by an INZ-approved doctor. Confirms you are fit to live and work in NZ.</td></tr>
+    <tr><td>Chest X-ray Certificate</td><td>Tuberculosis screening. Required for applicants from countries with higher TB rates (including Russia, Ukraine, Israel).</td></tr>
+    <tr><td>Students (under 12 months)</td><td>General Medical Certificate not required — only chest X-ray if applicable.</td></tr>
+    <tr><td>Validity</td><td>Medical certificates are valid for 3 months from the date of examination. Time your appointment carefully.</td></tr>
+  </table>
+
+  <h3>INZ-Approved Doctors — Find One in Your Country</h3>
+  <p>Immigration NZ maintains a list of approved panel physicians in each country. Results from approved doctors are sent <strong>directly and electronically to Immigration NZ</strong> — you do not need to handle the physical documents yourself.</p>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 Your Personal Reference Number</div>
+    <p>After your examination, ask the doctor for your personal <strong>eMedical reference number</strong>. Include this number in your visa application. This links your medical results directly to your file in Immigration NZ's system.</p>
+  </div>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ Approved Panel Physicians Exist in These Countries</div>
+    <p>Russia, Belarus, Ukraine, Kazakhstan, Uzbekistan, Georgia, Israel and most other countries have INZ-approved panel physicians. If your country is not on the list, you can use any registered medical facility — but results will not be sent electronically.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Medical Examination Resources</div>
+    <a href="https://www.emedical.immi.gov.au/eMedUI/eMedical">eMedical — Find an Approved Panel Physician Near You</a>
+    <a href="https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/health-requirements/who-needs-an-x-ray-or-medical-examination/">INZ — Who Needs a Medical Examination</a>
+    <a href="https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/health-requirements/">INZ — Full Health Requirements Guide</a>
+  </div>
+</div>
+
+<!-- ALTERNATIVE PATHWAY: POST STUDY WORK VISA -->
+<div class="section" id="altpathway" style="background:#fefcf7;">
+  <div class="section-header">
+    <div class="chapter-num">Alternative Pathway</div>
+    <h2>🎓 Alternative Route: Post Study Work Visa</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">Less known, but a valid option for some doctors — especially those who want to be in NZ while pursuing VOC3 registration.</p>
+  </div>
+
+  <h3 style="margin-top:0">How It Works</h3>
+  <p>Instead of arriving purely on a student visa for English, some doctors enrol in a <strong>Level 9 postgraduate diploma</strong> related to health. After completing the programme, they receive a <strong>Post Study Work Visa</strong> — an open work visa that allows full-time work in their field.</p>
+
+  <table class="info-table">
+    <tr><td>Programme level</td><td>Level 9 (Postgraduate Diploma) or above — e.g. Postgraduate Diploma in Applied Health and Rehabilitation at SIT</td></tr>
+    <tr><td>IELTS required</td><td>Academic 6.0–7.0 depending on programme (lower than VOC3 requirement of 7.5)</td></tr>
+    <tr><td>Duration</td><td>1–2 years study → Post Study Work Visa</td></tr>
+    <tr><td>Work rights during study</td><td>Up to 25 hours/week during term; full-time during breaks</td></tr>
+    <tr><td>Post Study Work Visa</td><td>Open work visa — work anywhere in your field while pursuing VOC3 registration in parallel</td></tr>
+    <tr><td>Best for</td><td>Doctors whose IELTS is not yet at 7.5; doctors who want NZ experience before VOC3 assessment</td></tr>
+  </table>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 Real Case — Doctor Family from Russia</div>
+    <p>A surgeon from Novosibirsk enrolled at SIT (Southland Institute of Technology) in Invercargill for English courses, then moved to a postgraduate health programme. His wife (dentist) studied Beauty Therapy at SIT. Their son attended local school. After graduation, both received Post Study Work Visas and began parallel VOC3 applications. Cost of living in Invercargill is significantly lower than Auckland.</p>
+  </div>
+
+  <h3>SIT — Southland Institute of Technology, Invercargill</h3>
+  <p>SIT is a government institute in Invercargill (South Island) that is popular with immigrant doctors. It offers fee-free English courses and postgraduate health programmes. Invercargill has a much lower cost of living than Auckland — rent for a family home runs NZD 1,200–1,800/month.</p>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ Important — Studying Medicine from Scratch in NZ</div>
+    <p>If you are a qualified doctor and want to study medicine again from scratch at a NZ university — your overseas medical degree is generally NOT recognised toward NZ medical programmes. You would need to start from year 2 at best, meaning 5+ more years of full medical study. This is almost never the right path for a qualified specialist. <strong>VOC3 pathway is your correct route.</strong></p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 SIT & Alternative Study Pathways</div>
+    <a href="https://www.sit.ac.nz">SIT — Southland Institute of Technology</a>
+    <a href="https://www.sit.ac.nz/Courses/English-Language-Courses">SIT English Language Courses (fee-free options)</a>
+    <a href="https://www.immigration.govt.nz/new-zealand-visas/visas/visa/post-study-work-visa">Post Study Work Visa — Immigration NZ</a>
+  </div>
+</div>
+
+<!-- TAXES & KIWISAVER -->
+<div class="section" id="taxes">
+  <div class="section-header">
+    <div class="chapter-num">Settling In — What Nobody Tells You</div>
+    <h2>💴 NZ Tax System & KiwiSaver</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">The most frequently asked questions in immigrant forums — and the most expensive mistakes if you get them wrong.</p>
+  </div>
+
+  <h3 style="margin-top:0">NZ Income Tax Rates (2025–2026)</h3>
+  <table class="info-table">
+    <tr><td>Up to NZD 14,000</td><td>10.5%</td></tr>
+    <tr><td>NZD 14,001 – 48,000</td><td>17.5%</td></tr>
+    <tr><td>NZD 48,001 – 70,000</td><td>30%</td></tr>
+    <tr><td>NZD 70,001 – 180,000</td><td>33%</td></tr>
+    <tr><td>Over NZD 180,000</td><td><strong>39%</strong></td></tr>
+  </table>
+
+  <div class="callout danger">
+    <div class="callout-title">⚠️ Reality Check for Doctors</div>
+    <p>As a consultant anaesthesiologist earning NZD 280,000–400,000, the majority of your income is taxed at 39%. This is higher than Israel's top rate of 47% but applies from a lower threshold. Factor this into your financial planning carefully — net take-home after tax is roughly 60–65% of gross salary at senior level.</p>
+  </div>
+
+  <h3>The 4-Year Transitional Resident Rule — A Major Advantage</h3>
+  <p>As a new tax resident, you may qualify for a <strong>4-year exemption on overseas-sourced income</strong>. This means income earned from Israeli investments, rental property, or savings during your first 4 years in NZ is generally not taxed in NZ. This is one of the most overlooked benefits for immigrants — and one of the most valuable.</p>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 Get a Tax Accountant in Year 1</div>
+    <p>NZ does not automatically file taxes for you — you must do it yourself via myIR. A tax accountant familiar with IMG doctors pays for itself many times over. Ask your hospital for referrals.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Tax Resources</div>
+    <a href="https://www.ird.govt.nz/myir">myIR — NZ online tax portal (file returns here)</a>
+    <a href="https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals">NZ Individual Tax Rates — IRD official</a>
+    <a href="https://www.ird.govt.nz/international-tax/individuals/moving-to-nz">Moving to NZ — tax guide for new residents</a>
+    <a href="https://www.ird.govt.nz/international-tax/individuals/transitional-residents">Transitional Resident Tax Exemption — IRD</a>
+    <a href="https://www.moneyhub.co.nz/income-tax.html">MoneyHub NZ — plain-English income tax guide</a>
+    <a href="https://sorted.org.nz/guides/tax">Sorted — government tax guide for individuals</a>
+  </div>
+
+  <h3>KiwiSaver — Free Money From Your Hospital</h3>
+  <p>KiwiSaver is NZ's voluntary retirement savings scheme. As a hospital employee, your employer is legally required to contribute <strong>at least 3% of your salary on top of your pay</strong>. But under the NZRDA (Resident Doctors' Association) collective agreement, NZ public hospitals match up to <strong>6% dollar-for-dollar</strong>.</p>
+
+  <table class="info-table">
+    <tr><td>Your contribution</td><td>3–10% of gross salary (you choose)</td></tr>
+    <tr><td>Employer contribution</td><td>Minimum 3%, up to 6% under NZRDA agreement</td></tr>
+    <tr><td>Government contribution</td><td>25 cents per dollar you contribute, max NZD 261/year</td></tr>
+    <tr><td>On NZD 300,000 salary</td><td>Employer adds NZD 18,000/year — free retirement savings</td></tr>
+    <tr><td>Opt-out window</td><td>Must decide within 50 days of starting employment</td></tr>
+    <tr><td>Access</td><td>Locked until age 65 (or first home purchase after 3 years)</td></tr>
+  </table>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 Contribute 6% from Day 1</div>
+    <p>If your hospital matches 6% and you contribute 6%, that's NZD 36,000/year going into your retirement fund on a NZD 300K salary — NZD 18K yours + NZD 18K free from the hospital. Opt-in within 50 days of starting. You cannot retroactively opt in after this window.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 KiwiSaver Resources</div>
+    <a href="https://www.ird.govt.nz/kiwisaver">KiwiSaver — IRD official guide</a>
+    <a href="https://www.fma.govt.nz/consumer/kiwisaver-and-superannuation/about-kiwisaver/">KiwiSaver — Financial Markets Authority guide</a>
+    <a href="https://nzrda.org.nz/rmos/superannuation/">NZRDA Superannuation — doctors' specific scheme</a>
+    <a href="https://www.mas.co.nz/investments/kiwisaver/kiwisaver-for-te-whatu-ora-health-new-zealand-employees/">MAS KiwiSaver for Health NZ employees</a>
+    <a href="https://sorted.org.nz/tools/kiwisaver-calculator/">Sorted — KiwiSaver calculator</a>
+    <a href="https://www.moneyhub.co.nz/kiwisaver.html">MoneyHub — best KiwiSaver funds compared</a>
+  </div>
+</div>
+
+<!-- RENTING A HOME -->
+<div class="section" id="renting">
+  <div class="section-header">
+    <div class="chapter-num">Settling In — What Nobody Tells You</div>
+    <h2>🔑 How to Actually Rent a Home in NZ</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">Finding a rental without NZ credit history is the #1 practical challenge. Here's how to do it.</p>
+  </div>
+
+  <h3 style="margin-top:0">The NZ Rental Process — Step by Step</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-content"><div class="step-title">Search listings on TradeMe, RealEstate.co.nz, or NZ Flatmates</div><p>Rent is quoted weekly in NZ — multiply by 4.33 for monthly. Start searching 4-6 weeks before you need the property.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-content"><div class="step-title">Attend an open home or arrange a viewing</div><p>Popular rentals in Auckland get 20-30 applications. Be ready to move fast — same-day applications are common.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-content"><div class="step-title">Submit a rental application</div><p>Applications require: ID, references (2-3 people), proof of income, rental history. As a new immigrant you won't have NZ rental history — compensate with employer letter and extra references.</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-content"><div class="step-title">Pay bond (4 weeks rent) + 2 weeks rent in advance</div><p>Bond must be lodged with Tenancy Services (not held by landlord). Total upfront: 6 weeks rent. On a NZD 3,500/month rental that's approx. NZD 4,850.</p></div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-content"><div class="step-title">Complete a property condition report</div><p>Document all existing damage at move-in with photos. This protects your bond at the end of tenancy. Use the Tenancy Services app.</p></div></div>
+  </div>
+
+  <h3>Getting a Rental Without NZ History — What Works</h3>
+  <ul class="guide-list">
+    <li><strong>Employer letter:</strong> A letter from your hospital confirming your role, start date, and salary is the single most powerful document. Request it before arrival.</li>
+    <li><strong>Offer a larger bond:</strong> You can legally offer more than 4 weeks (up to what the landlord accepts) — shows commitment.</li>
+    <li><strong>Bank statements:</strong> 3 months of Israeli bank statements showing healthy savings.</li>
+    <li><strong>References from Israel:</strong> Previous landlord reference letters (translate to English).</li>
+    <li><strong>Professional references:</strong> Letters from colleagues or supervisors describing you as reliable.</li>
+    <li><strong>Temporary housing first:</strong> Arrive with 4-6 weeks of Airbnb or serviced apartment booked. This relieves pressure and lets you view properties in person.</li>
+  </ul>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ Rent is Quoted Weekly in NZ</div>
+    <p>A listing saying "NZD 875/week" means NZD 3,794/month. Always mentally multiply by 4.33 to get the monthly figure. This catches many immigrants off guard.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Renting Resources</div>
+    <a href="https://www.tenancy.govt.nz/starting-a-tenancy/">Tenancy Services — how tenancies work in NZ</a>
+    <a href="https://www.tenancy.govt.nz/starting-a-tenancy/bond/">Bond — how it works and lodging requirements</a>
+    <a href="https://www.tenancy.govt.nz/starting-a-tenancy/condition-reports/">Property Condition Reports — protect your bond</a>
+    <a href="https://www.trademe.co.nz/a/property/residential/rent">TradeMe Rentals — search by suburb</a>
+    <a href="https://www.nzflatmates.co.nz">NZ Flatmates — shared housing and rooms</a>
+    <a href="https://www.immigration.govt.nz/live/setting-up-your-life-in-new-zealand/finding-a-place-to-live">Immigration NZ — housing guide for newcomers</a>
+  </div>
+</div>
+
+<!-- BUYING A CAR -->
+<div class="section" id="car">
+  <div class="section-header">
+    <div class="chapter-num">Settling In — What Nobody Tells You</div>
+    <h2>🚗 Buying a Car in New Zealand</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">Public transport in Auckland is improving but a car is essential for families. Here's what to know before you buy.</p>
+  </div>
+
+  <h3 style="margin-top:0">Your Israeli Licence in NZ</h3>
+  <table class="info-table">
+    <tr><td>First 12 months</td><td>Drive on your Israeli licence — no conversion needed</td></tr>
+    <tr><td>After 12 months</td><td>Must convert to NZ licence — theory test only (no practical test required for Israeli licence holders)</td></tr>
+    <tr><td>Where to convert</td><td>NZTA — visit any licensing agent or AA centre</td></tr>
+    <tr><td>Cost</td><td>Approx. NZD 70-100 for theory test + licence fee</td></tr>
+    <tr><td>NZ drives on</td><td>Left side of the road ⬅️ — give yourself 2-4 weeks to adapt</td></tr>
+  </table>
+
+  <h3>How to Buy a Used Car Safely</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-content"><div class="step-title">Search TradeMe Motors or AutoTrader</div><p>Filter by: make, year, km, price. Most private sales in NZ are on TradeMe.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-content"><div class="step-title">Run a Carjam check (carjam.co.nz)</div><p>For NZD 9, get full vehicle history: odometer readings, WoF history, registration status, accident reports, finance owing. Always do this before viewing.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-content"><div class="step-title">Check for outstanding finance (PPSR)</div><p>If a car has unpaid finance on it, the lender can repossess it even after you buy it. Check: ppsr.govt.nz</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-content"><div class="step-title">Get a pre-purchase inspection</div><p>An AA inspection costs approx. NZD 150-200 and covers mechanical condition, safety items, and WoF issues. Worth every dollar.</p></div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-content"><div class="step-title">Register the car in your name</div><p>At NZTA or online via NZTA's website. You need NZ address and payment. Do this same day as purchase.</p></div></div>
+  </div>
+
+  <h3>WoF — Warrant of Fitness</h3>
+  <p>Every car in NZ must have a current WoF — a safety inspection. Cars under 6 years old need it annually; older cars every 6 months. WoF costs approx. NZD 50-80 and is done at any approved garage or AA centre.</p>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ Never Drive Without a Current WoF</div>
+    <p>Driving with an expired WoF is a NZD 200 fine. Always check the WoF expiry sticker on the windscreen when buying a car.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Car Resources</div>
+    <a href="https://www.trademe.co.nz/a/motors">TradeMe Motors — NZ's #1 used car marketplace</a>
+    <a href="https://www.carjam.co.nz">Carjam — vehicle history check (NZD 9)</a>
+    <a href="https://www.ppsr.govt.nz">PPSR — check for finance owing on vehicle</a>
+    <a href="https://www.nzta.govt.nz/vehicles/warrants-and-certificates/warrant-of-fitness/">WoF — NZTA official guide</a>
+    <a href="https://www.nzta.govt.nz/driver-licences/new-residents-and-visitors/">Converting overseas licence — NZTA</a>
+    <a href="https://www.aa.co.nz/cars/car-buying/used-car-check/">AA Pre-Purchase Inspection</a>
+    <a href="https://www.nzta.govt.nz/vehicles/buying-selling/buying-a-used-vehicle/">NZTA — Safe buying guide</a>
+  </div>
+</div>
+
+<!-- CULTURE & SURPRISES -->
+<div class="section" id="culture" style="background:#fefcf7;">
+  <div class="section-header">
+    <div class="chapter-num">Settling In — What Nobody Tells You</div>
+    <h2>🥝 Culture Shocks & Things That Surprise Immigrants</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">From hundreds of expat forum posts — what people genuinely did not expect.</p>
+  </div>
+
+  <h3 style="margin-top:0">The Top Surprises</h3>
+
+  <div class="steps">
+    <div class="step"><div class="step-num">❄️</div><div class="step-content"><div class="step-title">Houses are cold inside in winter</div><p>Most NZ homes are built from timber with no double glazing and no central heating. Auckland winters reach 8°C outside — and sometimes feel that cold inside. Budget NZD 200-500 for a good heat pump (reverse-cycle air conditioner). This is the #1 complaint of newcomers.</p></div></div>
+    <div class="step"><div class="step-num">⬅️</div><div class="step-content"><div class="step-title">Driving on the left</div><p>Give yourself 2-4 weeks to fully adapt. The most dangerous moment is turning at intersections — your natural instinct will be wrong. Paste a note on your dashboard: "KEEP LEFT".</p></div></div>
+    <div class="step"><div class="step-num">🎄</div><div class="step-content"><div class="step-title">Seasons are reversed</div><p>December = summer (25-28°C). June-August = winter (8-15°C). Christmas is at the beach. This takes 1-2 years to feel normal. NZ school year starts in late January.</p></div></div>
+    <div class="step"><div class="step-num">📏</div><div class="step-content"><div class="step-title">Everything is far away</div><p>NZ is geographically isolated. Auckland to Wellington = 640 km (fly or 8-hour drive). A flight to Sydney = 3 hours. Israel = 20+ hours. Plan annual trips home carefully — they are expensive and exhausting.</p></div></div>
+    <div class="step"><div class="step-num">😌</div><div class="step-content"><div class="step-title">"She'll be right" culture</div><p>Kiwis are relaxed and informal — sometimes frustratingly so for detail-oriented professionals. Doctors, tradespeople, and suppliers may not respond urgently. Build more time into everything. It is not rudeness — it is the culture.</p></div></div>
+    <div class="step"><div class="step-num">🏥</div><div class="step-content"><div class="step-title">GP wait times are long</div><p>Many GP clinics are not accepting new patients. Find and enrol with a GP in your first week — before you need one. Enrolled patients pay 30-50% less per visit. Without enrolment, a visit costs NZD 75-130.</p></div></div>
+    <div class="step"><div class="step-num">🌿</div><div class="step-content"><div class="step-title">Biosecurity is very strict</div><p>NZ takes biosecurity extremely seriously. Do not bring fresh food, soil, plants, or wooden items without declaring them. Fines for non-declaration start at NZD 400. Always declare everything at customs — even if you think it is fine.</p></div></div>
+    <div class="step"><div class="step-num">🏉</div><div class="step-content"><div class="step-title">Rugby is a religion</div><p>The All Blacks are New Zealand's national identity. Learn a few basics — it helps enormously with social integration, especially with hospital colleagues. You do not need to love the sport, but knowing the game exists and matters is important.</p></div></div>
+    <div class="step"><div class="step-num">🪶</div><div class="step-content"><div class="step-title">Te Tiriti o Waitangi — the Treaty matters</div><p>New Zealand is founded on a Treaty between the Crown and Māori. As a doctor, you will undergo mandatory cultural safety training. Take it seriously — it is not box-ticking. Understanding Māori health perspectives makes you a better doctor and a better colleague.</p></div></div>
+  </div>
+
+  <h3>⚠️ Health Hazards Unique to New Zealand</h3>
+  <table class="info-table">
+    <tr><td>☀️ UV Radiation</td><td>New Zealand has one of the highest UV radiation levels in the world due to the Antarctic ozone hole. Skin cancer rates are among the highest globally. Danger period: October–April (NZ summer). Always use SPF 50+ sunscreen, wear hats and UV-protective clothing — especially for children.</td></tr>
+    <tr><td>🦷 Dental Costs</td><td>Dental care is NOT covered by the public health system (except for children under 18). Adult dental costs are high — a filling costs NZD 150–300, a crown NZD 1,500–2,500. Many NZ residents travel to Asia for dental work. Budget NZD 100–300/month for family dental care and get dental cover in your health insurance.</td></tr>
+    <tr><td>🌊 Rip Currents</td><td>NZ beaches are beautiful but dangerous. Rip currents kill several people each year. Always swim between the red-and-yellow flags at patrolled beaches. Never swim alone or at unpatrolled beaches.</td></tr>
+    <tr><td>🌿 Biosecurity</td><td>Declare EVERYTHING at customs — fresh food, soil, wooden items, plants. Non-declaration fines start at NZD 400. NZ biosecurity officers are thorough and non-negotiable.</td></tr>
+  </table>
+
+  <h3>NZ Slang Every Immigrant Should Know</h3>
+  <table class="info-table">
+    <tr><td>Kia ora</td><td>Hello / Thank you (Māori — use freely)</td></tr>
+    <tr><td>Sweet as</td><td>Excellent / No problem</td></tr>
+    <tr><td>She'll be right</td><td>It will be fine / don't worry</td></tr>
+    <tr><td>Chur</td><td>Thanks / Cool</td></tr>
+    <tr><td>Bro / Cuz</td><td>Friend (very common, not offensive)</td></tr>
+    <tr><td>Flat</td><td>Apartment / house share</td></tr>
+    <tr><td>Section</td><td>Plot of land / garden</td></tr>
+    <tr><td>Dairy</td><td>Corner shop / convenience store</td></tr>
+    <tr><td>Jandals</td><td>Flip flops / sandals</td></tr>
+    <tr><td>Togs</td><td>Swimwear</td></tr>
+    <tr><td>Bach</td><td>Holiday home / beach house</td></tr>
+    <tr><td>Good on ya</td><td>Well done / good for you</td></tr>
+  </table>
+</div>
+
+<!-- SAFETY & EARTHQUAKES -->
+<div class="section" id="safety">
+  <div class="section-header">
+    <div class="chapter-num">Settling In — What Nobody Tells You</div>
+    <h2>🌋 Safety, Earthquakes & Emergency Preparedness</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">New Zealand sits on the Pacific Ring of Fire. Earthquakes are common. Being prepared is part of life here.</p>
+  </div>
+
+  <h3 style="margin-top:0">Earthquake Basics</h3>
+  <table class="info-table">
+    <tr><td>Frequency</td><td>NZ has ~15,000 earthquakes per year. Most are too small to feel.</td></tr>
+    <tr><td>Auckland risk</td><td>Lower than Wellington or Christchurch — but not zero. Auckland also sits on 53 volcanoes.</td></tr>
+    <tr><td>Wellington risk</td><td>High — major fault line runs through the city. Built for it — buildings are engineered.</td></tr>
+    <tr><td>Christchurch</td><td>Rebuilt post-2011 earthquake. Modern buildings are very safe.</td></tr>
+    <tr><td>Timber houses</td><td>NZ timber homes actually perform better in earthquakes than brick/concrete — they flex rather than crumble.</td></tr>
+  </table>
+
+  <h3>What to Do in an Earthquake</h3>
+  <ul class="guide-list">
+    <li><strong>Drop, Cover, Hold:</strong> Drop to hands and knees, take cover under a sturdy table or desk, hold on until shaking stops</li>
+    <li><strong>If outside:</strong> Move away from buildings, power lines, trees — drop to the ground and cover your head</li>
+    <li><strong>If driving:</strong> Pull over away from bridges and overpasses, stay in the car</li>
+    <li><strong>After shaking stops:</strong> Check for gas leaks, structural damage. Expect aftershocks.</li>
+    <li><strong>Tsunami warning:</strong> If near coast and shaking is long/strong — move to high ground immediately, do not wait for official warning</li>
+  </ul>
+
+  <h3>Emergency Kit — Keep This at Home</h3>
+  <ul class="guide-list">
+    <li>Water: 3 litres per person per day, for at least 3 days</li>
+    <li>Food: Non-perishable items for 3 days (family of 4 = significant supply)</li>
+    <li>First aid kit and any regular medications (2-week supply)</li>
+    <li>Torch, batteries, portable phone charger</li>
+    <li>Cash (ATMs may not work after disaster)</li>
+    <li>Copies of important documents (passports, insurance, medical records)</li>
+    <li>Warm clothes and blankets</li>
+  </ul>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 Emergency & Safety Resources</div>
+    <a href="https://getready.govt.nz">GetReady.govt.nz — NZ official emergency preparedness</a>
+    <a href="https://www.civildefence.govt.nz">NZ Civil Defence — earthquakes, tsunamis, volcanoes</a>
+    <a href="https://www.geonet.org.nz">GeoNet — real-time NZ earthquake monitoring</a>
+    <a href="https://www.eqc.govt.nz">EQC — Earthquake Commission (natural disaster insurance)</a>
+    <a href="https://getready.govt.nz">Auckland Volcano Emergency Plan</a>
+    <a href="https://www.nzta.govt.nz/safety">Road Safety NZ — driving on the left, road rules</a>
+  </div>
+
+  <div class="callout warning">
+    <div class="callout-title">⚠️ Home Insurance — Always Include Earthquake Cover</div>
+    <p>Standard NZ contents insurance includes EQC levy (earthquake commission). But you should verify your policy explicitly covers natural disasters. After the Christchurch earthquakes, many uninsured homeowners lost everything. As a renter, contents insurance is essential — the landlord's insurance covers the building only, not your belongings.</p>
+  </div>
+</div>
+
+<!-- NZ READY CHECKLIST -->
+<div class="section" id="nzready" style="background:#f0f7f4;">
+  <div class="section-header">
+    <div class="chapter-num">Official Tool</div>
+    <h2>✅ NZ Ready — Your Personal Government Checklist</h2>
+    <p style="color:#555;font-size:14px;margin-top:8px;">Immigration NZ built a free personalised planning tool that generates a checklist specific to your situation. Almost no immigrants know about it.</p>
+  </div>
+
+  <div class="callout tip">
+    <div class="callout-title">💡 Start Here — Before Anything Else</div>
+    <p>NZ Ready (immigration.govt.nz/nz-ready) asks you about your visa type, family situation, and where you are in the process — then generates a personalised checklist of everything you need to do, with links to each resource. It takes 5 minutes and covers things even this guide may have missed.</p>
+  </div>
+
+  <div class="link-box">
+    <div class="lb-title">🔗 NZ Ready & Master Checklists</div>
+    <a href="https://www.immigration.govt.nz/nz-ready/">NZ Ready — personalised immigration checklist (official)</a>
+    <a href="https://www.immigration.govt.nz/live/setting-up-your-life-in-new-zealand/">Setting Up Your Life in NZ — Immigration NZ hub</a>
+    <a href="https://www.immigration.govt.nz/live/setting-up-your-life-in-new-zealand/">Settlement.govt.nz — government settlement resources</a>
+    <a href="https://www.immigration.govt.nz/live/moving-to-new-zealand/">New Zealand Now — official lifestyle and settlement guide</a>
+    <a href="https://www.govt.nz/browse/immigration-and-visas/living-in-new-zealand/">Living in NZ — Govt.nz hub</a>
+  </div>
+
+  <h3>Master Arrival Checklist — First 30 Days</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">W1</div><div class="step-content"><div class="step-title">Week 1 — Essentials</div><p>✓ Apply for IRD number (ird.govt.nz) &nbsp;✓ Open bank account (ANZ/ASB) &nbsp;✓ Get AT HOP card &nbsp;✓ Buy SIM card (2degrees/Spark) &nbsp;✓ Activate short-term accommodation &nbsp;✓ Register with GP (healthpoint.co.nz) &nbsp;✓ Enrol children in school</p></div></div>
+    <div class="step"><div class="step-num">W2</div><div class="step-content"><div class="step-title">Week 2 — Connect Utilities</div><p>✓ Connect electricity (Mercury/Electric Kiwi) &nbsp;✓ Set up broadband (Spark/2degrees) &nbsp;✓ Start searching for long-term rental &nbsp;✓ Apply for private health insurance (Southern Cross/nib) &nbsp;✓ Email Kim Richards at Triple0 — announce your arrival</p></div></div>
+    <div class="step"><div class="step-num">W3</div><div class="step-content"><div class="step-title">Week 3 — Legal & Financial</div><p>✓ Sign long-term rental lease &nbsp;✓ Lodge bond with Tenancy Services &nbsp;✓ Start car search (TradeMe Motors + Carjam) &nbsp;✓ Check KiwiSaver enrolment status with hospital HR &nbsp;✓ Meet with immigration lawyer to confirm VOC3 timeline</p></div></div>
+    <div class="step"><div class="step-num">W4</div><div class="step-content"><div class="step-title">Week 4 — Settle In</div><p>✓ Convert Israeli driving licence at AA centre &nbsp;✓ Set up earthquake kit at home &nbsp;✓ Download GetReady.govt.nz emergency plan &nbsp;✓ Find nearest dairy, Pak'nSave, and pharmacy &nbsp;✓ Connect with Russian-speaking community (Facebook/Telegram groups)</p></div></div>
+  </div>
+</div>
+
+
+<!-- CALCULATOR SECTION -->
+<div class="calc-section" id="calculator">
+  <div class="calc-intro">
+    <div class="chapter-num" style="color:var(--teal-mid);">Interactive Tool</div>
+    <h2>💰 Full Relocation Cost Calculator</h2>
+    <p>Calculate your complete budget for relocating to New Zealand — housing, groceries, insurance, pets, shipping, medical registration, and more. Covers 10 cities and adjusts automatically for your family size.</p>
+  </div>
+  <div class="calc-embed">
+
+
+<h1>Relocation Cost <span>Calculator</span></h1>
+    <p>Full budget planner for doctors and families relocating to New Zealand — housing, groceries, insurance, pets, shipping, and more.</p>
+  </div>
+</div>
+
+<div class="container">
+<div class="grid">
+
+<!-- LEFT COLUMN: INPUTS -->
+<div>
+
+  <!-- FAMILY -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">👨‍👩‍👧‍👦</span>
+      <span class="panel-title">Family Composition</span>
+      <span class="panel-toggle open">▼</span>
+    </div>
+    <div class="panel-body open">
+      <div class="field-row">
+        <div class="field">
+          <label>Adults</label>
+          <input type="number" id="adults" value="2" min="1" max="6" onchange="calc()">
+        </div>
+        <div class="field">
+          <label>Children</label>
+          <input type="number" id="children" value="2" min="0" max="8" onchange="calc()">
+        </div>
+      </div>
+      <div class="field" id="children-ages-wrap">
+        <label>Children's Ages</label>
+        <div id="children-ages"></div>
+        <div class="field-hint">Ages affect school fees and childcare costs</div>
+      </div>
+      <div class="field">
+        <label>Duration of Pre-Employment Period</label>
+        <div class="slider-wrap">
+          <input type="range" id="months" min="6" max="30" value="18" step="1" oninput="document.getElementById('months-val').textContent=this.value+' months';calc()">
+          <span class="slider-val" id="months-val">18 months</span>
+        </div>
+        <div class="field-hint">From arrival to first paycheque as registered anaesthesiologist</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCATION -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">📍</span>
+      <span class="panel-title">Location & Housing</span>
+      <span class="panel-toggle open">▼</span>
+    </div>
+    <div class="panel-body open">
+      <div class="field">
+        <label>City</label>
+        <select id="city" onchange="calc()">
+          <option value="auckland-central">Auckland — Central (Ponsonby, Grey Lynn)</option>
+          <option value="auckland-north">Auckland — North Shore (Takapuna, Devonport)</option>
+          <option value="auckland-east">Auckland — Eastern Suburbs (Remuera, Epsom)</option>
+          <option value="auckland-west">Auckland — West (Henderson, New Lynn)</option>
+          <option value="wellington">Wellington — Central</option>
+          <option value="wellington-hutt">Wellington — Lower Hutt / Petone</option>
+          <option value="christchurch">Christchurch</option>
+          <option value="hamilton">Hamilton</option>
+          <option value="tauranga">Tauranga</option>
+          <option value="dunedin">Dunedin</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Housing Type</label>
+        <select id="housing" onchange="calc()">
+          <option value="house3">3-bedroom house</option>
+          <option value="house4">4-bedroom house</option>
+          <option value="apt2">2-bedroom apartment</option>
+          <option value="apt3">3-bedroom apartment</option>
+          <option value="townhouse">Townhouse (3-bed)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Bond (Security Deposit)</label>
+        <div class="field-hint">Typically 4 weeks rent — paid once, refundable</div>
+      </div>
+      <div class="field">
+        <label>Utilities</label>
+        <select id="utilities" onchange="calc()">
+          <option value="basic">Basic (electricity + internet)</option>
+          <option value="standard" selected>Standard (electricity, gas, internet, water)</option>
+          <option value="premium">Premium (all utilities + Sky TV)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROCERIES -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">🛒</span>
+      <span class="panel-title">Food & Groceries</span>
+      <span class="panel-toggle open">▼</span>
+    </div>
+    <div class="panel-body open">
+      <div class="section-label">Select a Basket</div>
+      <div class="basket-grid">
+        <div class="basket-item active" onclick="selectBasket('budget',this)">
+          <div class="bi-name">🏷️ Budget</div>
+          <div class="bi-price" id="bp-budget">NZD —</div>
+          <div class="bi-desc">Pak'nSave, home cooking, no waste</div>
+        </div>
+        <div class="basket-item" onclick="selectBasket('moderate',this)">
+          <div class="bi-name">🥗 Moderate</div>
+          <div class="bi-price" id="bp-moderate">NZD —</div>
+          <div class="bi-desc">Mix of supermarkets, some quality</div>
+        </div>
+        <div class="basket-item" onclick="selectBasket('comfortable',this)">
+          <div class="bi-name">🍷 Comfortable</div>
+          <div class="bi-price" id="bp-comfortable">NZD —</div>
+          <div class="bi-desc">New World, organic, variety</div>
+        </div>
+        <div class="basket-item" onclick="selectBasket('custom',this)">
+          <div class="bi-name">⚙️ Custom</div>
+          <div class="bi-price" id="bp-custom">NZD —</div>
+          <div class="bi-desc">Adjust each item manually</div>
+        </div>
+      </div>
+
+      <div id="custom-grocery" style="display:none;">
+        <div class="section-label">Customise Grocery Items (NZD/month)</div>
+        <div class="grocery-adj" id="grocery-items"></div>
+      </div>
+
+      <div class="field" style="margin-top:14px;">
+        <label>Dining Out (restaurants, cafes, takeaways)</label>
+        <select id="dining" onchange="calc()">
+          <option value="rare">Rarely (1-2×/month) — NZD 100-200</option>
+          <option value="occasional" selected>Occasional (2-4×/month) — NZD 300-500</option>
+          <option value="regular">Regular (weekly) — NZD 600-900</option>
+          <option value="frequent">Frequent (multiple/week) — NZD 1,200+</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSPORT -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">🚗</span>
+      <span class="panel-title">Transport</span>
+      <span class="panel-toggle open">▼</span>
+    </div>
+    <div class="panel-body open">
+      <div class="tabs">
+        <div class="tab active" onclick="setTab('transport','public',this)">Public</div>
+        <div class="tab" onclick="setTab('transport','car',this)">Own Car</div>
+        <div class="tab" onclick="setTab('transport','both',this)">Both</div>
+      </div>
+      <div id="transport-public" class="tab-content active">
+        <div class="field">
+          <label>Monthly Pass (adults)</label>
+          <div class="field-hint" id="transit-hint">Auckland AT HOP monthly pass</div>
+        </div>
+        <div class="field">
+          <label>Occasional Taxi / Uber</label>
+          <select id="uber" onchange="calc()">
+            <option value="0">None</option>
+            <option value="80" selected>Occasional — NZD 80/month</option>
+            <option value="200">Regular — NZD 200/month</option>
+            <option value="400">Frequent — NZD 400/month</option>
+          </select>
+        </div>
+      </div>
+      <div id="transport-car" class="tab-content">
+        <div class="field">
+          <label>Car Purchase (one-time, used)</label>
+          <select id="car-price" onchange="calc()">
+            <option value="8000">Economy used — NZD 8,000-12,000</option>
+            <option value="15000" selected>Reliable family car — NZD 15,000-20,000</option>
+            <option value="25000">Newer model — NZD 25,000-35,000</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Fuel (monthly)</label>
+          <select id="fuel" onchange="calc()">
+            <option value="150">Light use — NZD 150/month</option>
+            <option value="280" selected>Regular commute — NZD 280/month</option>
+            <option value="450">Heavy use — NZD 450/month</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Car Insurance (monthly)</label>
+          <select id="car-ins" onchange="calc()">
+            <option value="80">Third party — NZD 80/month</option>
+            <option value="140" selected>Comprehensive — NZD 140/month</option>
+            <option value="200">Full + roadside — NZD 200/month</option>
+          </select>
+        </div>
+        <div class="field-hint">Registration & WoF: ~NZD 500/year; Maintenance: NZD 150-300/month avg</div>
+      </div>
+      <div id="transport-both" class="tab-content">
+        <p style="font-size:12px;color:#888;padding:8px 0;">Combines public transport pass + car ownership costs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEALTHCARE & INSURANCE -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">🏥</span>
+      <span class="panel-title">Healthcare & Insurance</span>
+      <span class="panel-toggle">▼</span>
+    </div>
+    <div class="panel-body">
+      <div class="section-label">Health Insurance</div>
+      <div class="field">
+        <label>Private Health Cover (family)</label>
+        <select id="health-ins" onchange="calc()">
+          <option value="250">Basic — NZD 250/month (limited cover)</option>
+          <option value="450" selected>Standard — NZD 450/month (most IMGs choose this)</option>
+          <option value="700">Comprehensive — NZD 700/month (incl. dental)</option>
+          <option value="1000">Premium — NZD 1,000/month (full specialist access)</option>
+        </select>
+        <div class="field-hint">⚠️ Mandatory for student visa holders — not eligible for public health until residency</div>
+      </div>
+      <div class="field">
+        <label>GP Visits (per consultation)</label>
+        <select id="gp" onchange="calc()">
+          <option value="30">Enrolled patient (subsidised) — NZD 19-30</option>
+          <option value="55" selected>Standard — NZD 45-65</option>
+          <option value="80">After-hours clinic — NZD 75-100</option>
+        </select>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Dental (not covered by public system)
+          <small>~NZD 80-200/visit, budget NZD 100-300/month for family</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="dental" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row" style="margin-top:10px;">
+        <div class="toggle-label">Optical (glasses/contacts)
+          <small>~NZD 50-150/month</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="optical" onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+
+      <div class="section-label" style="margin-top:16px;">Property Insurance</div>
+      <div class="toggle-row">
+        <div class="toggle-label">Contents Insurance
+          <small>~NZD 70-120/month — covers furniture, electronics, clothing</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="contents-ins" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Travel Insurance (Israel ↔ NZ trips)
+          <small>~NZD 200-400/year per person</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="travel-ins" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">📚</span>
+      <span class="panel-title">Education & Language</span>
+      <span class="panel-toggle">▼</span>
+    </div>
+    <div class="panel-body">
+      <div class="section-label">Language Course</div>
+      <div class="field">
+        <label>English Language School (you)</label>
+        <select id="lang-course" onchange="calc()">
+          <option value="0">Not applicable</option>
+          <option value="1200" selected>AEA Auckland — NZD 1,200-1,500/month</option>
+          <option value="1800">Premium school — NZD 1,800-2,200/month</option>
+        </select>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Language course — spouse
+          <small>~NZD 800-1,200/month</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="spouse-lang" onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="field" style="margin-top:12px;">
+        <label>Language Exam (OET / PTE / IELTS)</label>
+        <select id="lang-exam" onchange="calc()">
+          <option value="500">One attempt — NZD 450-600</option>
+          <option value="1000" selected>Two attempts — NZD 900-1,200 (realistic)</option>
+          <option value="1500">Three attempts — NZD 1,300-1,800</option>
+        </select>
+      </div>
+
+      <div class="section-label" style="margin-top:14px;">Children's School</div>
+      <div id="school-options">
+        <!-- Dynamic based on children ages -->
+        <div class="field-hint">Add children's ages above to see school options</div>
+      </div>
+      <div class="field" style="margin-top:10px;">
+        <label>Extracurricular Activities</label>
+        <select id="extracurricular" onchange="calc()">
+          <option value="0">None</option>
+          <option value="150" selected>Basic — NZD 150/month (sport/music)</option>
+          <option value="350">Active — NZD 350/month (multiple activities)</option>
+          <option value="600">Intensive — NZD 600/month</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTRATION COSTS -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">📋</span>
+      <span class="panel-title">Medical Registration (MCNZ)</span>
+      <span class="panel-toggle">▼</span>
+    </div>
+    <div class="panel-body">
+      <div class="toggle-row">
+        <div class="toggle-label">MyIntealth / EPIC credential verification
+          <small>One-time — NZD 500-1,000</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="myintealth" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">MCNZ Application Fee (VOC3)
+          <small>One-time — approx. NZD 2,500-3,500</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="mcnz-fee" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">VOC3 Registration Pathway
+          <small>Up to NZD 10,000 — usually reimbursed by hospital</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="voc3" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Good Standing Certificates
+          <small>Israeli Medical Association + others — NZD 200-500</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="good-standing" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Document translations (apostilles, certified EN)
+          <small>NZD 500-1,500 depending on volume</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="translations" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="field" style="margin-top:12px;">
+        <label>Immigration Lawyer (Gild Legal)</label>
+        <select id="lawyer" onchange="calc()">
+          <option value="0">Self-managed (not recommended)</option>
+          <option value="3500">Basic package — NZD 3,500-5,000</option>
+          <option value="6000" selected>Full family service — NZD 6,000-8,000</option>
+          <option value="10000">Premium service — NZD 10,000+</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- PETS -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">🐾</span>
+      <span class="panel-title">Pets</span>
+      <span class="panel-toggle">▼</span>
+    </div>
+    <div class="panel-body">
+      <div class="toggle-row">
+        <div class="toggle-label">I am bringing pets to New Zealand</div>
+        <label class="switch"><input type="checkbox" id="has-pets" onchange="togglePets()"><span class="slider-sw"></span></label>
+      </div>
+      <div id="pets-detail" style="display:none; margin-top:14px;">
+        <div class="field-hint" style="margin-bottom:12px;">⚠️ Israel is a Category 3 country — minimum 10-day quarantine required. Start process 6+ months before travel.</div>
+        <div class="section-label">Select Your Pet(s)</div>
+        <div class="pet-grid">
+          <div class="pet-card" id="pet-cat" onclick="togglePet('cat')">
+            <div class="pc-icon">🐱</div>
+            <div class="pc-name">Cat</div>
+            <div class="pc-cost">~NZD 3,500-6,000</div>
+          </div>
+          <div class="pet-card" id="pet-dog-small" onclick="togglePet('dog-small')">
+            <div class="pc-icon">🐶</div>
+            <div class="pc-name">Small Dog</div>
+            <div class="pc-cost">~NZD 4,000-7,000</div>
+          </div>
+          <div class="pet-card" id="pet-dog-large" onclick="togglePet('dog-large')">
+            <div class="pc-icon">🦮</div>
+            <div class="pc-name">Large Dog</div>
+            <div class="pc-cost">~NZD 5,000-9,000</div>
+          </div>
+          <div class="pet-card" id="pet-multi" onclick="togglePet('multi')">
+            <div class="pc-icon">🐱🐶</div>
+            <div class="pc-name">Multiple Pets</div>
+            <div class="pc-cost">~NZD 8,000-16,000</div>
+          </div>
+        </div>
+        <div class="section-label">Ongoing Pet Costs (monthly)</div>
+        <div class="field">
+          <label>Pet Food & Supplies</label>
+          <select id="pet-food" onchange="calc()">
+            <option value="60">Cat — NZD 60-100/month</option>
+            <option value="120" selected>Small dog — NZD 100-150/month</option>
+            <option value="200">Large dog — NZD 180-280/month</option>
+            <option value="300">Multiple pets — NZD 250-400/month</option>
+          </select>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">Pet Insurance
+            <small>NZD 40-120/month depending on breed/age</small>
+          </div>
+          <label class="switch"><input type="checkbox" id="pet-ins" onchange="calc()"><span class="slider-sw"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">Vet visits (routine)
+            <small>~NZD 80-150/month average</small>
+          </div>
+          <label class="switch"><input type="checkbox" id="pet-vet" onchange="calc()"><span class="slider-sw"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">Dog walker / pet sitter
+            <small>~NZD 200-500/month</small>
+          </div>
+          <label class="switch"><input type="checkbox" id="pet-walker" onchange="calc()"><span class="slider-sw"></span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHIPPING -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">📦</span>
+      <span class="panel-title">Shipping & Moving</span>
+      <span class="panel-toggle">▼</span>
+    </div>
+    <div class="panel-body">
+      <div class="field">
+        <label>Volume of Household Goods</label>
+        <select id="shipping-vol" onchange="calc()">
+          <option value="2000">Minimal (suitcases + air freight) — NZD 1,500-2,500</option>
+          <option value="5000" selected>Medium (1-2 bedroom worth) — NZD 4,000-7,000</option>
+          <option value="10000">Large (full house contents) — NZD 8,000-15,000</option>
+          <option value="20000">Full household (4+ bedrooms) — NZD 15,000-25,000</option>
+        </select>
+        <div class="field-hint">Sea freight from Israel to Auckland takes 6-8 weeks</div>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">NZ Customs clearance & biosecurity inspection
+          <small>~NZD 500-800 one-time</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="customs" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Temporary furnished accommodation (1-2 months on arrival)
+          <small>NZD 3,000-6,000 while you find permanent rental</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="temp-accom" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Flights (Israel → New Zealand, full family)
+          <small>NZD 3,000-7,000 depending on season and class</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="flights" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">New furniture & household items on arrival
+          <small>NZD 3,000-8,000 for basics</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="furniture" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIFESTYLE -->
+  <div class="panel">
+    <div class="panel-header" onclick="togglePanel(this)">
+      <span class="panel-icon">🌿</span>
+      <span class="panel-title">Lifestyle & Wellbeing</span>
+      <span class="panel-toggle">▼</span>
+    </div>
+    <div class="panel-body">
+      <div class="field">
+        <label>Personal Care (haircuts, cosmetics, toiletries)</label>
+        <select id="personal-care" onchange="calc()">
+          <option value="100">Minimal — NZD 100/month</option>
+          <option value="250" selected>Standard — NZD 250/month</option>
+          <option value="500">Premium — NZD 500/month</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Gym / Fitness</label>
+        <select id="gym" onchange="calc()">
+          <option value="0">None</option>
+          <option value="60" selected>Budget gym — NZD 60/month</option>
+          <option value="120">Mid-range — NZD 120/month</option>
+          <option value="250">Premium + pool — NZD 250/month</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Entertainment & Recreation</label>
+        <select id="entertainment" onchange="calc()">
+          <option value="150">Low — NZD 150/month</option>
+          <option value="300" selected>Moderate — NZD 300/month</option>
+          <option value="600">Active — NZD 600/month</option>
+          <option value="1000">High — NZD 1,000/month</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Streaming Services (Netflix, Spotify, etc.)</label>
+        <select id="streaming" onchange="calc()">
+          <option value="0">None</option>
+          <option value="30">One service — NZD 25-35/month</option>
+          <option value="70" selected>2-3 services — NZD 60-80/month</option>
+          <option value="120">Full bundle — NZD 100-140/month</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Trips back to Israel (annual)</label>
+        <select id="return-trips" onchange="calc()">
+          <option value="0">None in first year</option>
+          <option value="4000" selected>One family trip/year — NZD 3,500-5,000</option>
+          <option value="8000">Two trips/year — NZD 7,000-10,000</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Mobile Phones (family plan)</label>
+        <select id="phones" onchange="calc()">
+          <option value="80">Budget SIM only — NZD 30-50/person</option>
+          <option value="150" selected>Standard plan — NZD 60-80/person</option>
+          <option value="250">Premium with handsets — NZD 120-150/person</option>
+        </select>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Clothing & Seasonal Wardrobe
+          <small>NZ winters require warm clothes — NZD 150-400/month avg</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="clothing" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+      <div class="toggle-row">
+        <div class="toggle-label">Emergency / Miscellaneous Reserve
+          <small>Recommended 10-15% buffer on top of total monthly</small>
+        </div>
+        <label class="switch"><input type="checkbox" id="emergency" checked onchange="calc()"><span class="slider-sw"></span></label>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end left col -->
+
+<!-- RIGHT COLUMN: RESULTS -->
+<div class="results-sticky">
+  <div class="results-panel">
+    <div class="results-header">
+      <h2>Your Budget Estimate</h2>
+      <p>All amounts in NZD — updated in real time</p>
+    </div>
+    <div class="results-body">
+
+      <div class="result-total">
+        <div class="amount" id="res-monthly">NZD 0</div>
+        <div class="period">per month</div>
+        <div class="annual">Total for <span id="res-months">18</span> months: <strong id="res-total-period">NZD 0</strong></div>
+      </div>
+
+      <div class="result-bar"><div class="result-bar-fill" id="bar-housing" style="width:30%"></div></div>
+
+      <div class="result-section-title">Monthly Breakdown</div>
+
+      <div class="result-line">
+        <span class="rl-name">🏠 Housing (rent)</span>
+        <span class="rl-val" id="rl-housing">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">⚡ Utilities</span>
+        <span class="rl-val" id="rl-utilities">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">🛒 Groceries</span>
+        <span class="rl-val" id="rl-groceries">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">🍽️ Dining out</span>
+        <span class="rl-val" id="rl-dining">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">🚗 Transport</span>
+        <span class="rl-val" id="rl-transport">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">🏥 Health insurance</span>
+        <span class="rl-val" id="rl-health">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">📚 Education / language</span>
+        <span class="rl-val" id="rl-education">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">🌿 Lifestyle</span>
+        <span class="rl-val" id="rl-lifestyle">—</span>
+      </div>
+      <div class="result-line">
+        <span class="rl-name">🐾 Pets (ongoing)</span>
+        <span class="rl-val" id="rl-pets-ongoing">—</span>
+      </div>
+      <div class="result-line" id="emergency-line">
+        <span class="rl-name">⚡ Emergency buffer (12%)</span>
+        <span class="rl-val" id="rl-emergency">—</span>
+      </div>
+
+      <!-- ONE-TIME COSTS -->
+      <div class="one-time-box">
+        <div class="otb-title">📋 One-Time Costs (pre-departure + arrival)</div>
+        <div class="otb-line"><span>Flights (family)</span><span id="ot-flights">—</span></div>
+        <div class="otb-line"><span>Shipping & freight</span><span id="ot-shipping">—</span></div>
+        <div class="otb-line"><span>Pets (quarantine + transport)</span><span id="ot-pets">—</span></div>
+        <div class="otb-line"><span>Temp accommodation</span><span id="ot-temp">—</span></div>
+        <div class="otb-line"><span>New furniture</span><span id="ot-furniture">—</span></div>
+        <div class="otb-line"><span>Housing bond</span><span id="ot-bond">—</span></div>
+        <div class="otb-line"><span>Car purchase</span><span id="ot-car">—</span></div>
+        <div class="otb-line"><span>Immigration lawyer</span><span id="ot-lawyer">—</span></div>
+        <div class="otb-line"><span>MCNZ registration</span><span id="ot-mcnz">—</span></div>
+        <div class="otb-line"><span>Language exam</span><span id="ot-langexam">—</span></div>
+        <div class="otb-line"><span>Translations & documents</span><span id="ot-docs">—</span></div>
+        <div class="otb-total"><span>TOTAL ONE-TIME</span><span id="ot-total">—</span></div>
+      </div>
+
+      <div class="tip-box" id="tip-box">
+        💡 Tip: loading...
+      </div>
+
+      <div class="alert-box" id="alert-box" style="display:none"></div>
+
+      <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+      <div class="calc-footer">
+        Prices based on 2025-2026 NZ market data. All figures are estimates — verify with local sources. NZD prices. Created by Vladislav Fridman.
+      </div>
+    </div>
+  </div>
+</div><!-- end right col -->
+
+</div><!-- end grid -->
+</div><!-- end container -->
+
+<script>
+// ===== DATA =====
+const RENT = {
+  'auckland-central': { house3: 3400, house4: 4200, apt2: 2600, apt3: 3200, townhouse: 3000 },
+  'auckland-north':   { house3: 3100, house4: 3900, apt2: 2400, apt3: 3000, townhouse: 2800 },
+  'auckland-east':    { house3: 3600, house4: 4500, apt2: 2800, apt3: 3500, townhouse: 3200 },
+  'auckland-west':    { house3: 2400, house4: 3000, apt2: 1900, apt3: 2500, townhouse: 2300 },
+  'wellington':       { house3: 3200, house4: 3900, apt2: 2400, apt3: 3000, townhouse: 2800 },
+  'wellington-hutt':  { house3: 2600, house4: 3200, apt2: 1900, apt3: 2500, townhouse: 2400 },
+  'christchurch':     { house3: 2200, house4: 2800, apt2: 1700, apt3: 2200, townhouse: 2100 },
+  'hamilton':         { house3: 2000, house4: 2500, apt2: 1500, apt3: 2000, townhouse: 1900 },
+  'tauranga':         { house3: 2300, house4: 2900, apt2: 1800, apt3: 2300, townhouse: 2200 },
+  'dunedin':          { house3: 1800, house4: 2300, apt2: 1400, apt3: 1800, townhouse: 1700 },
+};
+
+const UTILITIES = {
+  basic: 250, standard: 380, premium: 520
+};
+
+const TRANSIT_PASS = {
+  'auckland-central': 220, 'auckland-north': 220, 'auckland-east': 220, 'auckland-west': 220,
+  'wellington': 190, 'wellington-hutt': 190,
+  'christchurch': 130, 'hamilton': 100, 'tauranga': 100, 'dunedin': 90
+};
+
+const CITY_NAMES = {
+  'auckland-central':'Auckland Central','auckland-north':'Auckland North Shore',
+  'auckland-east':'Auckland East','auckland-west':'Auckland West',
+  'wellington':'Wellington','wellington-hutt':'Lower Hutt',
+  'christchurch':'Christchurch','hamilton':'Hamilton','tauranga':'Tauranga','dunedin':'Dunedin'
+};
+
+// Base grocery per person per month
+const GROCERY_BASE = { budget: 350, moderate: 500, comfortable: 700 };
+
+// Custom grocery items
+const GROCERY_ITEMS = [
+  { key: 'produce', label: '🥦 Fresh Produce', budget: 80, moderate: 120, comfortable: 160 },
+  { key: 'meat', label: '🥩 Meat & Fish', budget: 100, moderate: 160, comfortable: 240 },
+  { key: 'dairy', label: '🥛 Dairy & Eggs', budget: 60, moderate: 80, comfortable: 110 },
+  { key: 'pantry', label: '🍞 Pantry & Dry Goods', budget: 70, moderate: 90, comfortable: 120 },
+  { key: 'snacks', label: '🍫 Snacks & Drinks', budget: 40, moderate: 70, comfortable: 100 },
+  { key: 'household', label: '🧹 Household Supplies', budget: 40, moderate: 60, comfortable: 80 },
+  { key: 'personal', label: '🧴 Personal Care', budget: 30, moderate: 50, comfortable: 80 },
+  { key: 'baby', label: '👶 Baby/Toddler', budget: 80, moderate: 120, comfortable: 160 },
+];
+
+const DINING_COST = { rare: 150, occasional: 400, regular: 750, frequent: 1400 };
+
+const PET_ONETIME = { cat: 4500, 'dog-small': 5500, 'dog-large': 7500, multi: 12000 };
+
+let currentBasket = 'budget';
+let selectedPets = [];
+let transportTab = 'public';
+let customGroceries = {};
+
+// Init grocery custom
+GROCERY_ITEMS.forEach(item => { customGroceries[item.key] = item.budget; });
+
+// ===== PANEL TOGGLE =====
+function togglePanel(header) {
+  const body = header.nextElementSibling;
+  const toggle = header.querySelector('.panel-toggle');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  toggle.classList.toggle('open', !isOpen);
+}
+
+// ===== TABS =====
+function setTab(group, tab, el) {
+  if (group === 'transport') transportTab = tab;
+  document.querySelectorAll(`#transport-public, #transport-car, #transport-both`).forEach(t => t.classList.remove('active'));
+  document.getElementById(`transport-${tab}`).classList.add('active');
+  el.parentElement.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  calc();
+}
+
+// ===== BASKET =====
+function selectBasket(basket, el) {
+  currentBasket = basket;
+  document.querySelectorAll('.basket-item').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('custom-grocery').style.display = basket === 'custom' ? 'block' : 'none';
+  if (basket === 'custom') renderCustomGrocery();
+  calc();
+}
+
+function renderCustomGrocery() {
+  const adults = parseInt(document.getElementById('adults').value) || 2;
+  const children = parseInt(document.getElementById('children').value) || 0;
+  const people = adults + children * 0.7;
+  const container = document.getElementById('grocery-items');
+  container.innerHTML = '';
+  GROCERY_ITEMS.forEach(item => {
+    const base = Math.round(item.budget * people);
+    if (!customGroceries[item.key]) customGroceries[item.key] = base;
+    const row = document.createElement('div');
+    row.className = 'grocery-row';
+    row.innerHTML = `<span>${item.label}</span><input type="number" value="${customGroceries[item.key]}" min="0" max="2000" onchange="customGroceries['${item.key}']=parseInt(this.value)||0;calc()">`;
+    container.appendChild(row);
+  });
+}
+
+// ===== CHILDREN AGES =====
+function updateChildrenAges() {
+  const n = parseInt(document.getElementById('children').value) || 0;
+  const wrap = document.getElementById('children-ages');
+  wrap.innerHTML = '';
+  const ageFields = document.createElement('div');
+  ageFields.style.display = 'grid';
+  ageFields.style.gridTemplateColumns = 'repeat(auto-fill, minmax(80px, 1fr))';
+  ageFields.style.gap = '8px';
+  for (let i = 0; i < n; i++) {
+    const inp = document.createElement('input');
+    inp.type = 'number';
+    inp.min = 0; inp.max = 17;
+    inp.value = i === 0 ? 3 : 11;
+    inp.placeholder = `Child ${i+1}`;
+    inp.style.cssText = 'padding:8px;border:1.5px solid var(--border);border-radius:6px;font-size:13px;font-family:inherit;text-align:center;';
+    inp.onchange = calc;
+    ageFields.appendChild(inp);
+  }
+  wrap.appendChild(ageFields);
+  document.getElementById('children-ages-wrap').style.display = n > 0 ? 'block' : 'none';
+}
+
+// ===== PETS =====
+function togglePets() {
+  const show = document.getElementById('has-pets').checked;
+  document.getElementById('pets-detail').style.display = show ? 'block' : 'none';
+  calc();
+}
+
+function togglePet(type) {
+  const card = document.getElementById(`pet-${type}`);
+  const idx = selectedPets.indexOf(type);
+  if (idx === -1) {
+    selectedPets.push(type);
+    card.classList.add('active');
+  } else {
+    selectedPets.splice(idx, 1);
+    card.classList.remove('active');
+  }
+  calc();
+}
+
+// ===== FORMAT =====
+function fmt(n) {
+  if (!n || n === 0) return '<span class="zero">—</span>';
+  return 'NZD ' + Math.round(n).toLocaleString();
+}
+function fmtPlain(n) { return 'NZD ' + Math.round(n).toLocaleString(); }
+
+// ===== MAIN CALC =====
+function calc() {
+  const adults = parseInt(document.getElementById('adults').value) || 2;
+  const children = parseInt(document.getElementById('children').value) || 0;
+  const months = parseInt(document.getElementById('months').value) || 18;
+  const city = document.getElementById('city').value;
+  const housing = document.getElementById('housing').value;
+  const people = adults + children * 0.7;
+
+  document.getElementById('res-months').textContent = months;
+
+  // Update basket prices
+  updateBasketPrices(people);
+
+  // HOUSING
+  const rent = RENT[city][housing];
+  const utilities = UTILITIES[document.getElementById('utilities').value];
+  const bond = rent * 4;
+
+  // GROCERIES
+  let groceries = 0;
+  if (currentBasket === 'custom') {
+    groceries = Object.values(customGroceries).reduce((a,b) => a+b, 0);
+  } else if (currentBasket === 'budget') {
+    groceries = Math.round(GROCERY_BASE.budget * people);
+  } else if (currentBasket === 'moderate') {
+    groceries = Math.round(GROCERY_BASE.moderate * people);
+  } else {
+    groceries = Math.round(GROCERY_BASE.comfortable * people);
+  }
+  const dining = DINING_COST[document.getElementById('dining').value];
+
+  // TRANSPORT
+  let transportMonthly = 0, transportOneTime = 0;
+  const transitPass = TRANSIT_PASS[city] * adults;
+  const uber = parseInt(document.getElementById('uber').value) || 0;
+  const carPrice = parseInt(document.getElementById('car-price').value) || 0;
+  const fuel = parseInt(document.getElementById('fuel').value) || 0;
+  const carIns = parseInt(document.getElementById('car-ins').value) || 0;
+
+  if (transportTab === 'public') {
+    transportMonthly = transitPass + uber;
+  } else if (transportTab === 'car') {
+    transportMonthly = fuel + carIns + 200; // maintenance avg
+    transportOneTime = carPrice;
+  } else {
+    transportMonthly = transitPass + fuel + carIns + 150;
+    transportOneTime = carPrice;
+  }
+
+  // HEALTH
+  const healthIns = parseInt(document.getElementById('health-ins').value) || 0;
+  const gp = parseInt(document.getElementById('gp').value) * 2 * adults;
+  const dental = document.getElementById('dental').checked ? 200 : 0;
+  const optical = document.getElementById('optical').checked ? 80 : 0;
+  const contentsIns = document.getElementById('contents-ins').checked ? 90 : 0;
+  const travelIns = document.getElementById('travel-ins').checked ? 50 : 0;
+  const totalHealth = healthIns + gp + dental + optical + contentsIns + travelIns;
+
+  // EDUCATION
+  const langCourse = parseInt(document.getElementById('lang-course').value) || 0;
+  const spouseLang = document.getElementById('spouse-lang').checked ? 1000 : 0;
+  const langExam = parseInt(document.getElementById('lang-exam').value) || 0; // one-time
+  const extracurricular = parseInt(document.getElementById('extracurricular').value) || 0;
+  // School costs (simplified)
+  let schoolCost = extracurricular;
+  const totalEducation = langCourse + spouseLang + schoolCost;
+
+  // REGISTRATION (one-time)
+  const myintealth = document.getElementById('myintealth').checked ? 750 : 0;
+  const mcnzFee = document.getElementById('mcnz-fee').checked ? 3000 : 0;
+  const voc3 = document.getElementById('voc3').checked ? 10000 : 0;
+  const goodStanding = document.getElementById('good-standing').checked ? 400 : 0;
+  const translations = document.getElementById('translations').checked ? 1000 : 0;
+  const lawyer = parseInt(document.getElementById('lawyer').value) || 0;
+  const totalMCNZ = myintealth + mcnzFee + voc3 + goodStanding + translations;
+
+  // PETS
+  let petsOnetime = 0, petsMonthly = 0;
+  const hasPets = document.getElementById('has-pets').checked;
+  if (hasPets) {
+    selectedPets.forEach(p => { petsOnetime += PET_ONETIME[p] || 0; });
+    const petFood = parseInt(document.getElementById('pet-food').value) || 0;
+    const petIns = document.getElementById('pet-ins').checked ? 80 : 0;
+    const petVet = document.getElementById('pet-vet').checked ? 100 : 0;
+    const petWalker = document.getElementById('pet-walker').checked ? 300 : 0;
+    petsMonthly = petFood + petIns + petVet + petWalker;
+  }
+
+  // SHIPPING & MOVING (one-time)
+  const shippingVol = parseInt(document.getElementById('shipping-vol').value) || 0;
+  const customs = document.getElementById('customs').checked ? 650 : 0;
+  const tempAccom = document.getElementById('temp-accom').checked ? 4500 : 0;
+  const flights = document.getElementById('flights').checked ? 5000 : 0;
+  const furniture = document.getElementById('furniture').checked ? 5000 : 0;
+
+  // LIFESTYLE
+  const personalCare = parseInt(document.getElementById('personal-care').value) || 0;
+  const gym = parseInt(document.getElementById('gym').value) || 0;
+  const entertainment = parseInt(document.getElementById('entertainment').value) || 0;
+  const streaming = parseInt(document.getElementById('streaming').value) || 0;
+  const returnTrips = parseInt(document.getElementById('return-trips').value) / 12 || 0;
+  const phones = parseInt(document.getElementById('phones').value) || 0;
+  const clothing = document.getElementById('clothing').checked ? 250 : 0;
+  const totalLifestyle = personalCare + gym + entertainment + streaming + returnTrips + phones + clothing;
+
+  // MONTHLY TOTAL (before buffer)
+  const monthlyBase = rent + utilities + groceries + dining + transportMonthly +
+    totalHealth + totalEducation + totalLifestyle + petsMonthly;
+
+  const emergencyBuffer = document.getElementById('emergency').checked ? Math.round(monthlyBase * 0.12) : 0;
+  const monthlyTotal = monthlyBase + emergencyBuffer;
+
+  // ONE-TIME TOTALS
+  const oneTimeTotal = shippingVol + customs + tempAccom + flights + furniture + bond +
+    transportOneTime + lawyer + totalMCNZ + langExam + petsOnetime;
+
+  // PERIOD TOTAL
+  const periodTotal = monthlyTotal * months + oneTimeTotal;
+
+  // === UPDATE UI ===
+  document.getElementById('res-monthly').textContent = fmtPlain(monthlyTotal);
+  document.getElementById('res-total-period').textContent = fmtPlain(periodTotal);
+
+  const pct = r => Math.min(100, Math.round(r / monthlyTotal * 100)) + '%';
+  document.getElementById('bar-housing').style.width = pct(rent);
+
+  document.getElementById('rl-housing').innerHTML = fmtPlain(rent);
+  document.getElementById('rl-utilities').innerHTML = fmtPlain(utilities);
+  document.getElementById('rl-groceries').innerHTML = fmtPlain(groceries);
+  document.getElementById('rl-dining').innerHTML = fmt(dining);
+  document.getElementById('rl-transport').innerHTML = fmtPlain(transportMonthly);
+  document.getElementById('rl-health').innerHTML = fmtPlain(totalHealth);
+  document.getElementById('rl-education').innerHTML = fmt(totalEducation);
+  document.getElementById('rl-lifestyle').innerHTML = fmtPlain(totalLifestyle);
+  document.getElementById('rl-pets-ongoing').innerHTML = hasPets ? fmtPlain(petsMonthly) : '<span class="zero">—</span>';
+  document.getElementById('rl-emergency').innerHTML = emergencyBuffer ? fmtPlain(emergencyBuffer) : '<span class="zero">—</span>';
+  document.getElementById('emergency-line').style.opacity = emergencyBuffer ? 1 : 0.3;
+
+  // ONE-TIME
+  document.getElementById('ot-flights').textContent = flights ? fmtPlain(flights) : '—';
+  document.getElementById('ot-shipping').textContent = shippingVol ? fmtPlain(shippingVol + customs) : '—';
+  document.getElementById('ot-pets').textContent = petsOnetime ? fmtPlain(petsOnetime) : '—';
+  document.getElementById('ot-temp').textContent = tempAccom ? fmtPlain(tempAccom) : '—';
+  document.getElementById('ot-furniture').textContent = furniture ? fmtPlain(furniture) : '—';
+  document.getElementById('ot-bond').textContent = fmtPlain(bond);
+  document.getElementById('ot-car').textContent = transportOneTime ? fmtPlain(transportOneTime) : '—';
+  document.getElementById('ot-lawyer').textContent = lawyer ? fmtPlain(lawyer) : '—';
+  document.getElementById('ot-mcnz').textContent = totalMCNZ ? fmtPlain(totalMCNZ) : '—';
+  document.getElementById('ot-langexam').textContent = langExam ? fmtPlain(langExam) : '—';
+  document.getElementById('ot-docs').textContent = (goodStanding + translations) ? fmtPlain(goodStanding + translations) : '—';
+  document.getElementById('ot-total').textContent = fmtPlain(oneTimeTotal);
+
+  // TIPS
+  const tips = [
+    `Pak'nSave is NZ's cheapest supermarket — switching from New World can save NZD 200-400/month for a family.`,
+    `Enrol in a GP clinic immediately on arrival — enrolled patients pay 30-50% less per visit than walk-ins.`,
+    `Auckland AT HOP monthly pass gives ~20% discount vs single fares — set it up on day 1.`,
+    `Ask your future hospital about the VOC3 reimbursement clause before signing — NZD 10,000 back on first payslip.`,
+    `TradeMe.co.nz is NZ's equivalent of eBay — great for second-hand furniture and appliances to reduce setup costs.`,
+    `Flatmates.nz is the best site for finding a rental in NZ as a newcomer.`,
+    `IRD number is your tax ID — apply online the day you arrive. You need it to work legally.`,
+    `Consider a BNZ or ASB bank account — both offer free international transfers for new migrants.`,
+  ];
+  document.getElementById('tip-box').textContent = '💡 ' + tips[Math.floor(Math.random() * tips.length)];
+
+  // ALERTS
+  const alertBox = document.getElementById('alert-box');
+  if (hasPets && selectedPets.length === 0) {
+    alertBox.style.display = 'block';
+    alertBox.textContent = '⚠️ Pet transport selected but no pets chosen. Select at least one pet type above.';
+  } else if (hasPets && selectedPets.length > 0) {
+    alertBox.style.display = 'block';
+    alertBox.textContent = `🐾 Pet quarantine (Israel → NZ): minimum 10 days. Start process 6+ months before departure. Pets enter via Auckland or Christchurch airport only.`;
+  } else {
+    alertBox.style.display = 'none';
+  }
+}
+
+function updateBasketPrices(people) {
+  document.getElementById('bp-budget').textContent = fmtPlain(Math.round(GROCERY_BASE.budget * people));
+  document.getElementById('bp-moderate').textContent = fmtPlain(Math.round(GROCERY_BASE.moderate * people));
+  document.getElementById('bp-comfortable').textContent = fmtPlain(Math.round(GROCERY_BASE.comfortable * people));
+  // custom
+  const customTotal = Object.values(customGroceries).reduce((a,b) => a+b, 0);
+  document.getElementById('bp-custom').textContent = customTotal > 0 ? fmtPlain(customTotal) : 'Set above';
+}
+
+// INIT - wrapped in DOMContentLoaded to prevent null errors on iOS Safari
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    var adultsEl = document.getElementById('adults');
+    var childrenEl = document.getElementById('children');
+    var cityEl = document.getElementById('city');
+    
+    if (adultsEl) adultsEl.addEventListener('change', function() { calc(); });
+    if (childrenEl) childrenEl.addEventListener('change', function() { updateChildrenAges(); calc(); });
+    if (cityEl) cityEl.addEventListener('change', function() {
+      var city = cityEl.value;
+      var hint = document.getElementById('transit-hint');
+      if (hint) hint.textContent = (CITY_NAMES[city] || city) + ' monthly transit pass';
+    });
+    
+    updateChildrenAges();
+    calc();
+  } catch(e) { console.log('calc init error:', e); }
+});
+</script>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="guide-footer">
+  <strong>Doctor to New Zealand — Complete Guide 2026</strong><br>
+  Written by Vladislav Fridman, Senior Anaesthesiologist | Israel → New Zealand<br>
+  All prices in NZD. Data current as of 2025–2026. Verify all official requirements directly with MCNZ and Immigration New Zealand.<br><br>
+  MCNZ: mcnz.org.nz &nbsp;|&nbsp; Immigration NZ: immigration.govt.nz &nbsp;|&nbsp; Triple0 Medical: triple0.com &nbsp;|&nbsp; Gild Legal: gildlegal.co.nz
+</div>
+
+</div><!-- end .main -->
+
+<button class="scroll-top" id="scrollTopBtn">↑</button>
+
+<script>
+// Scroll top button
+window.addEventListener('scroll', function() {
+  try {
+    var btn = document.getElementById('scrollTopBtn');
+    if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+  } catch(e) {}
+});
+
+// Active nav highlighting
+function scrollToSection(id) {
+  try {
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({behavior: 'smooth'});
+  } catch(e) {}
+}
+
+window.addEventListener('scroll', function() {
+  try {
+    var sections = ['hero','links','resources','ch1','ch2','ch3','ch4','ch5','ch6','ch7','ch8','taxes','renting','car','culture','safety','nzready','calculator'];
+    var current = 'hero';
+    sections.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 120) current = id;
+    });
+    document.querySelectorAll('.nav-item').forEach(function(item) {
+      var oc = item.getAttribute('onclick') || '';
+      item.classList.toggle('active', oc.indexOf(current) >= 0);
+    });
+  } catch(e) {}
+});
+
+// CALCULATOR JAVASCRIPT
+
+
+// ===== MULTILINGUAL TRANSLATION SYSTEM BELOW =====
+
+// ===== MULTILINGUAL TRANSLATION SYSTEM =====
+// Uses event delegation - no onclick attributes needed (iOS Safari safe)
+
+var LANG_GT = {
+  'en':'', 'ru':'ru', 'uk':'uk', 'de':'de', 'fr':'fr',
+  'pl':'pl', 'he':'iw', 'hi':'hi', 'ar':'ar', 'zh':'zh-CN', 'ko':'ko'
+};
+var LANG_NAMES = {
+  'en':'English','ru':'Русский','uk':'Українська','de':'Deutsch',
+  'fr':'Français','pl':'Polski','he':'עברית','hi':'हिन्दी',
+  'ar':'العربية','zh':'中文','ko':'한국어'
+};
+var RTL = {'he':1,'ar':1};
+
+// Attach click handlers after DOM ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Lang bar click delegation
+  var bar = document.querySelector('.lang-bar');
+  if (bar) {
+    bar.addEventListener('click', function(e) {
+      var btn = e.target;
+      if (!btn || btn.className.indexOf('lang-btn') < 0) return;
+      var lang = btn.getAttribute('data-lang');
+      if (!lang) return;
+      handleLangSwitch(lang);
+    });
+  }
+  // Scroll to top button
+  var scrollBtn = document.getElementById('scrollTopBtn');
+  if (scrollBtn) {
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  }
+  // Nav scroll links
+  document.querySelectorAll('.nav-item[data-section]').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var id = item.getAttribute('data-section');
+      var el = document.getElementById(id);
+      if (el) el.scrollIntoView({behavior: 'smooth'});
+    });
+  });
+});
+
+function handleLangSwitch(lang) {
+  // Update active button
+  var buttons = document.querySelectorAll('.lang-btn');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove('active');
+    if (buttons[i].getAttribute('data-lang') === lang) {
+      buttons[i].classList.add('active');
+    }
+  }
+
+  // RTL
+  document.documentElement.setAttribute('dir', RTL[lang] ? 'rtl' : 'ltr');
+
+  // Country banners
+  var banners = document.querySelectorAll('.country-banner');
+  for (var j = 0; j < banners.length; j++) {
+    banners[j].classList.remove('visible');
+  }
+  var banner = document.getElementById('banner-' + lang);
+  if (banner) banner.classList.add('visible');
+
+  // English = done
+  if (lang === 'en') return;
+
+  // Show translate modal
+  var gtCode = LANG_GT[lang] || lang;
+  var name = LANG_NAMES[lang] || lang;
+  showTranslateModal(name, gtCode);
+}
+
+function showTranslateModal(name, gtCode) {
+  var existing = document.getElementById('lang-modal');
+  if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+
+  var currentUrl = window.location.href;
+  var gtUrl = 'https://translate.google.com/translate?sl=en&tl=' + gtCode + '&u=' + encodeURIComponent(currentUrl);
+
+  var modal = document.createElement('div');
+  modal.id = 'lang-modal';
+  modal.style.position = 'fixed';
+  modal.style.top = '0';
+  modal.style.left = '0';
+  modal.style.right = '0';
+  modal.style.bottom = '0';
+  modal.style.background = 'rgba(10,10,20,0.92)';
+  modal.style.zIndex = '9999';
+  modal.style.display = 'flex';
+  modal.style.alignItems = 'center';
+  modal.style.justifyContent = 'center';
+  modal.style.padding = '16px';
+
+  var box = document.createElement('div');
+  box.style.background = '#1a1a2e';
+  box.style.border = '1px solid #0f6674';
+  box.style.borderRadius = '16px';
+  box.style.padding = '28px 24px';
+  box.style.maxWidth = '380px';
+  box.style.width = '100%';
+  box.style.textAlign = 'center';
+
+  var icon = document.createElement('div');
+  icon.style.fontSize = '40px';
+  icon.style.marginBottom = '10px';
+  icon.textContent = '🌍';
+
+  var title = document.createElement('h3');
+  title.style.color = '#7ec8d3';
+  title.style.fontSize = '20px';
+  title.style.marginBottom = '10px';
+  title.style.fontFamily = 'serif';
+  title.textContent = 'Read in ' + name;
+
+  var desc = document.createElement('p');
+  desc.style.color = 'rgba(255,255,255,0.6)';
+  desc.style.fontSize = '13px';
+  desc.style.lineHeight = '1.6';
+  desc.style.marginBottom = '20px';
+  desc.textContent = 'Tap below to open this guide translated to ' + name + '.';
+
+  var link = document.createElement('a');
+  link.href = gtUrl;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.style.display = 'block';
+  link.style.padding = '14px';
+  link.style.background = '#0f6674';
+  link.style.color = 'white';
+  link.style.borderRadius = '10px';
+  link.style.textDecoration = 'none';
+  link.style.fontWeight = '700';
+  link.style.fontSize = '14px';
+  link.style.marginBottom = '14px';
+  link.textContent = '🌐 Open in Google Translate';
+
+  var hint = document.createElement('p');
+  hint.style.color = 'rgba(255,255,255,0.3)';
+  hint.style.fontSize = '11px';
+  hint.style.marginBottom = '20px';
+  hint.style.lineHeight = '1.5';
+  hint.innerHTML = 'Chrome: right-click &rarr; Translate<br>Safari: Share &rarr; Translate';
+
+  var closeBtn = document.createElement('button');
+  closeBtn.style.padding = '10px 28px';
+  closeBtn.style.background = 'transparent';
+  closeBtn.style.border = '1px solid rgba(255,255,255,0.2)';
+  closeBtn.style.color = 'rgba(255,255,255,0.5)';
+  closeBtn.style.borderRadius = '8px';
+  closeBtn.style.cursor = 'pointer';
+  closeBtn.style.fontSize = '13px';
+  closeBtn.style.fontFamily = 'sans-serif';
+  closeBtn.textContent = 'Close';
+  closeBtn.onclick = function() {
+    var m = document.getElementById('lang-modal');
+    if (m && m.parentNode) m.parentNode.removeChild(m);
+  };
+
+  box.appendChild(icon);
+  box.appendChild(title);
+  box.appendChild(desc);
+  box.appendChild(link);
+  box.appendChild(hint);
+  box.appendChild(closeBtn);
+  modal.appendChild(box);
+  document.body.appendChild(modal);
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      var m = document.getElementById('lang-modal');
+      if (m && m.parentNode) m.parentNode.removeChild(m);
+    }
+  };
+}
+
+</script>
+</body>
+</html>
